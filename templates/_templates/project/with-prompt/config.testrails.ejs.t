@@ -1,5 +1,5 @@
 ---
-to: <%- project %>Testrails.config.js
+to: <%- project %>Testrails.env.json
 ---
 
 {
