@@ -17,7 +17,7 @@ module.exports = defineConfig({
   pageLoadTimeout: 20000,
   screenshotOnRunFailure: false,
   videoCompression: 0,
-  test: <%- configuration %>,
+  test: <%- number %>,
 
   e2e: {
     setupNodeEvents(on, config) {
