@@ -9,6 +9,18 @@ module.exports = [{
     message: 'What is the baseUrl for this project?',
   },
   {
+    type: 'confirm',
+    name: 'configure',
+    message: 'Do you want configure testrail?',
+
+
+
+    if (configure = y) {
+      console.log(configure)
+    }
+
+  },
+  {
     type: 'input',
     name: 'projectId',
     message: 'What is the projectId for this project?',
