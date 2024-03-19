@@ -9,11 +9,6 @@ module.exports = [{
     message: 'What is the baseUrl for this project?',
   },
   {
-    type: 'confirm',
-    name: 'configuration',
-    message: 'Do you want to add testRails configuration?',
-  },
-  {
     type: 'input',
     name: 'projectId',
     message: 'What is the projectId for this project?',
