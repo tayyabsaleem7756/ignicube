@@ -1,5 +1,5 @@
 ---
-to: <%- project %>cypress.config.js <%= configure ? : false %>
+to: <%- project %>cypress.config.js <%= configure ? = false %>
 unless_exists: true
 ---
 
