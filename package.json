@@ -1,5 +1,5 @@
 {
-  "name": "@tayyabsaleem7756/igni",
+  "name": "@optimumqa/cypress-boilerplate",
   "version": "1.0.0",
   "description": "Scaffolds a new cypress project",
   "bin": "index.js",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tayyabsaleem7756/igni.git"
+    "url": "https://github.com/optimumqa/cypress-boilerplate.git"
   },
   "keywords": [
     "cypress",
@@ -18,12 +18,12 @@
     "boilerplate",
     "template"
   ],
-  "author": "Optimum QA <bussines.tayyabsaleem7756@gmail.com>",
+  "author": "Optimum QA <bussines.optimumqa@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tayyabsaleem7756/igni/issues"
+    "url": "https://github.com/optimumqa/cypress-boilerplate/issues"
   },
-  "homepage": "https://github.com/tayyabsaleem7756/igni#readme",
+  "homepage": "https://github.com/optimumqa/cypress-boilerplate#readme",
   "devDependencies": {
     "semantic-release": "21.0.6"
   },
