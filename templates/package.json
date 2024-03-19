@@ -17,8 +17,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "tayyabsaleem7756/cypress-setup-utilities": "1.7.0",
-    "tayyabsaleem7756/cypress-store": "1.0.3",
+    "@tayyabsaleem/cypress-setup-utilities": "1.7.0",
+    "@tayyabsaleem/cypress-store": "1.0.3",
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "@types/node": "^18.14.0",
     "allure-commandline": "^2.22.1",
