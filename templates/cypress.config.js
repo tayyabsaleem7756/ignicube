@@ -1,31 +1,27 @@
-import { defineConfig } from 'cypress'
-// Do not import plugins directly here. Do it in the file below
-import plugins from './cypress/plugins'
+const {
+  defineConfig
+} = require("cypress");
 
-const finalConfig = defineConfig({
+module.exports = defineConfig({
+  chromeWebSecurity: false,
+  trashAssetsBeforeRuns: true,
+  defaultCommandTimeout: 50000,
   viewportWidth: 1920,
   viewportHeight: 1080,
-  env: {
-    allure: true,
-    allureReuseAfterSpec: true,
-  },
+  numTestsKeptInMemory: 1,
+  video: false,
+  pageLoadTimeout: 20000,
+  screenshotOnRunFailure: false,
+  videoCompression: 0,
+
   e2e: {
-    defaultCommandTimeout: 30000,
-    pageLoadTimeout: 30000,
-    chromeWebSecurity: false,
-    reporter: 'cypress-multi-reporters',
-    reporterOptions: {
-      configFile: 'reporterOptions.json',
-    },
-    screenshotsFolder: 'cypress/reports/mochareports/screenshots',
-    videosFolder: 'cypress/reports/mochareports/videos',
     setupNodeEvents(on, config) {
-      // Setup plugins
-      config = plugins(on, config)
-
-      return config
+      // implement node event listeners here
+      on('before:run', (details) => {
+        /* code that needs to run before all specs */
+      })
     },
+    testIsolation: false,
   },
-})
-
-export default finalConfig
+  experimentalInteractiveRunEvents: true, // use for cypress open mode
+});
