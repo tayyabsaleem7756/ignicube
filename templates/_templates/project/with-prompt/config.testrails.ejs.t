@@ -1,7 +1,6 @@
 ---
-to: <%- project %>cypress.config.js
+to: <%- project %>cypress.config.js <%= configure ? : false %>
 unless_exists: true
-skip_if: <%= configure false %>
 ---
 
 const {
