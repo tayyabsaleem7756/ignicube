@@ -13,4 +13,9 @@ module.exports = [{
     name: 'configuration',
     message: 'Do you want to add testRails configuration?',
   },
+  {
+    type: 'input',
+    name: 'number',
+    message: 'What is the number for this project?',
+  },
 ]
