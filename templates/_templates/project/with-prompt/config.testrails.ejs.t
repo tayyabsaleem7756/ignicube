@@ -22,10 +22,10 @@ module.exports = defineConfig({
   numTestsKeptInMemory: 0,
   reporterOptions: {
     host: "enter host name",
-    projectId: 00,
+    projectId: 123,
     username: "enter username here",
     password: "enter username here",
-    suiteId: 00,
+    suiteId: 123,
     includeAllInTestRun: false,
     allowFailedScreenshotUpload: true,
     useKnownIssueFeature: true,
