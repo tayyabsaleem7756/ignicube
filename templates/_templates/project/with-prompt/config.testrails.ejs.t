@@ -1,5 +1,5 @@
 ---
-to: cypress/e2e/<%- project %>/cypressTestrails.cy.ts
+to: cypress/<%- project %>/cypressTestrails.cy.ts
 ---
 
 describe('Default', () => {
