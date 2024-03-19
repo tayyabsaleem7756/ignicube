@@ -12,10 +12,6 @@ module.exports = [{
     type: 'confirm',
     name: 'configure',
     message: 'Do you want configure testrail?',
-
-    if (configure = y) {
-      console.log(configure)
-    }
   },
   {
     type: 'input',
