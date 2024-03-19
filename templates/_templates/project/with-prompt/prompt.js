@@ -10,7 +10,7 @@ module.exports = [{
   },
   {
     type: 'confirm',
-    name: 'redirect',
+    name: 'configuration',
     message: 'Do you want to add testRails configuration?',
   },
 ]
