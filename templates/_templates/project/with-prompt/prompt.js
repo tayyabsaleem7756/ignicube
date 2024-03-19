@@ -20,17 +20,17 @@ module.exports = [{
   },
   {
     type: 'input',
-    name: 'projectId',
+    name: 'username',
     message: 'What is the username for testrails?',
   },
   {
     type: 'input',
-    name: 'projectId',
+    name: 'password',
     message: 'What is the password for testrails?',
   },
   {
     type: 'input',
-    name: 'projectId',
+    name: 'suiteId',
     message: 'What is the suiteId for testrails?',
   },
 ]
