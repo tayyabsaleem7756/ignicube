@@ -28,9 +28,6 @@ function main() {
   console.log(`1. cd ${args[0] || './tayyabsaleem7756/'}`)
   console.log('2. npm install')
   console.log('3. npm run add-project')
-  if (configure = true) {
-    console.log('sample here ')
-  }
 }
 
 if (require.main === module) {
