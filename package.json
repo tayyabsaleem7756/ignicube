@@ -1,0 +1,33 @@
+{
+  "name": "@optimumqa/cypress-boilerplate",
+  "version": "1.0.0",
+  "description": "Scaffolds a new cypress project",
+  "bin": "index.js",
+  "files": [
+    "templates/",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/optimumqa/cypress-boilerplate.git"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-boilerplate",
+    "cypress-template",
+    "boilerplate",
+    "template"
+  ],
+  "author": "Optimum QA <bussines.optimumqa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/optimumqa/cypress-boilerplate/issues"
+  },
+  "homepage": "https://github.com/optimumqa/cypress-boilerplate#readme",
+  "devDependencies": {
+    "semantic-release": "21.0.6"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  }
+}
