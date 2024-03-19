@@ -21,10 +21,10 @@ var copyRecursiveSync = function (src, dest) {
 
 function main() {
   const args = process.argv.slice(2)
-  copyRecursiveSync(path.join(__dirname, 'templates'), args[0] || './tayyabsaleem7756-cypress-boilerplate/')
+  copyRecursiveSync(path.join(__dirname, 'templates'), args[0] || './tayyabsaleem7756/igni/')
   console.log('\nDone.')
   console.log('\nRun the following commands to add your first project:')
-  console.log(`1. cd ${args[0] || './tayyabsaleem7756-cypress-boilerplate/'}`)
+  console.log(`1. cd ${args[0] || './tayyabsaleem7756/igni/'}`)
   console.log('2. npm install')
   console.log('3. npm run add-project')
 }
