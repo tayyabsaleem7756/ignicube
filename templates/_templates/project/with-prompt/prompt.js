@@ -13,24 +13,24 @@ module.exports = [{
     name: 'configure',
     message: 'Do you want configure testrail?',
   },
-  {
-    type: 'input',
-    name: 'projectId',
-    message: 'What is the projectId for this project?',
-  },
-  {
-    type: 'input',
-    name: 'username',
-    message: 'What is the username for testrails?',
-  },
-  {
-    type: 'input',
-    name: 'password',
-    message: 'What is the password for testrails?',
-  },
-  {
-    type: 'input',
-    name: 'suiteId',
-    message: 'What is the suiteId for testrails?',
-  },
+  // {
+  //   type: 'input',
+  //   name: 'projectId',
+  //   message: 'Enter testrails projectId?',
+  // },
+  // {
+  //   type: 'input',
+  //   name: 'username',
+  //   message: 'Enter testrails username?',
+  // },
+  // {
+  //   type: 'input',
+  //   name: 'password',
+  //   message: 'Enter testrails password?',
+  // },
+  // {
+  //   type: 'input',
+  //   name: 'suiteId',
+  //   message: 'Enter testrails suitId?',
+  // },
 ]

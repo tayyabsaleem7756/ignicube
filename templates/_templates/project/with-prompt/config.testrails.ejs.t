@@ -1,7 +1,6 @@
 ---
 unless_exists: true
 to: <%- project %>cypress.config.js 
-to: <%= configure ?  : false %>
 ---
 
 const {
@@ -22,11 +21,11 @@ module.exports = defineConfig({
   reporter: "cypress-testrail-reporter",
   numTestsKeptInMemory: 0,
   reporterOptions: {
-    host: "https://navable.testrail.io",
-    projectId: <%- projectId %>,
-    username: "<%- username %>",
-    password: "<%- password %>",
-    suiteId: <%- suiteId %>,
+    host: "enter host name",
+    projectId: 00,
+    username: "enter username here",
+    password: "enter username here",
+    suiteId: 00,
     includeAllInTestRun: false,
     allowFailedScreenshotUpload: true,
     useKnownIssueFeature: true,
