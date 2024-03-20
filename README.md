@@ -3,23 +3,23 @@
 </div>
 
 </br>
-https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/Tayyab/Desktop/igni/Logo.png?version%3D1710933340491
+
 ## Table of contents
 
 - [Getting started](#getting-started)
   - [Installation](#installation)
 
-## Getting started
+## Seeting up you project with few commands
 
-### Installation
+### Installation Guide
 
 Keep in mind that my-application is default name of your project but you can update while cloning this repository
 ```sh
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
 
-Install dependencies:
-First, move into new created project folder. Keep in mind that my-application is default name of your project but you can update while cloning this repository
+Install dependencies</br>
+First, move into new created project folder.
 ```sh
 cd my-application
 
