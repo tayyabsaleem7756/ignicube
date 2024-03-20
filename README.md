@@ -3,16 +3,12 @@
 </div>
 
 </br>
-
-Logo.png
+https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/Tayyab/Desktop/igni/Logo.png?version%3D1710933340491
 ## Table of contents
 
 - [Getting started](#getting-started)
   - [Installation](#installation)
 
-<a href="">
-  <img alt="Cypress" src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" target="_blank" />
-</a>
 ## Getting started
 
 ### Installation
@@ -452,3 +448,6 @@ Please ⭐️ this repository if this project helped you!
 ## 📝 License
 
 This project is [MIT](https://github.com/optimumqa/cypress-boilerplate/blob/main/LICENSE) licensed.
+
+
+[def]: ttps://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5
