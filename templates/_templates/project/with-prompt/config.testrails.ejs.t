@@ -1,6 +1,6 @@
 ---
-unless_exists: true
 to: cypress/cypress.config.js 
+force: true
 ---
 
 const {
