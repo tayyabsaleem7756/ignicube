@@ -27,6 +27,7 @@ module.exports = defineConfig({
       })
     },
     testIsolation: false,
+    supportFile: false,
   },
   experimentalInteractiveRunEvents: true, // use for cypress open mode
 });
