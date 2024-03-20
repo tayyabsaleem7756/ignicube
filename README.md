@@ -1,4 +1,4 @@
-<h1 align="center">Good to see you here cypress-testrail-boilerplate </h1><![alt ignicube](Logo.png)>
+<h1 align="center">Good to see you here cypress-testrail-boilerplate ![alt ignicube](Logo.png)</h1>
 <div align="center">Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can center more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
