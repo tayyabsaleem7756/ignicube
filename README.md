@@ -1,10 +1,10 @@
-<h1 align="center">Good to see you here cypress-testrail-boilerplate![alt text](Logo-1.png)</h1>![alt text](Logo-2.png)
+<h1 align="center">Good to see you here cypress-testrail-boilerplate</h1>
 <div align="center">Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can center more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
 </br>
-![alt text](Logo-2.png)
-![alt text](Logo-1.png)
+![alt scs](Logo-2.png)
+![alt fdfsfs](Logo-1.png)
 
 ## Table of contents
 
