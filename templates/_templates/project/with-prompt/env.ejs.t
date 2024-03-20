@@ -1,5 +1,5 @@
 ---
-to: "<%= configure ? : false %>"
+to: "<%= configure ? = false %>"
 ---
 const {
   defineConfig
