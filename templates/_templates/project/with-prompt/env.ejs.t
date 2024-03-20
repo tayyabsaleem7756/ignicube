@@ -1,5 +1,5 @@
 ---
-to: "<%= configure ? 'cypress.config.js' : true %>"
+to: "<%= configure ? 'cypress.config.js' : cypress.config.js %>"
 ---
 const {
   defineConfig
