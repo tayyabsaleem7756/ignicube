@@ -1,6 +1,5 @@
 ---
-to: <%- project %>cypress.env.json
-skip_if: <%= configure ? /cypress/cypress.env.json : null %>
+to: <%= configure ? /cypress/cypress.config.js : null %>
 ---
 const {
   defineConfig
