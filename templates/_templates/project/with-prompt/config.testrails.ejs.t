@@ -1,6 +1,6 @@
 ---
 unless_exists: true
-to: <%- project %>cypress.config.js 
+to: cypress/cypress.config.js 
 ---
 
 const {
