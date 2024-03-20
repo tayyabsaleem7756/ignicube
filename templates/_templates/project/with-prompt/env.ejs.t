@@ -1,5 +1,5 @@
 ---
-to: "<%= configure ? 'app/hello.js' : null %>"
+to: "<%= configure ? 'hello.js' : null %>"
 ---
 const {
   defineConfig
