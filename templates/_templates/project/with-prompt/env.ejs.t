@@ -2,17 +2,16 @@
 to: "<%= configure ? 'cypress.env.json' : null %>"
 ---
 {
-    "stagingUrl": "https://staging.gleen.is/",
-    "email": "gleen-qa@ignicube.com",
-    "password": "gwk@rcy5QVD8mte_drn",
-    "company_logo_path": "sample-logo.png",
     "testrail": {
-        "domain": "",
-        "projectId": "P2",
-        "milestoneId": "",
-        "suiteId": "S9",
+        "domain": "Enter your domain e.g. https://sample.testrail.io/",
+        "projectId": "Enter your project ID e.g P2",
+        "milestoneId": "Enter your milesstone ID e.g 9",
+        "suiteId": "Enter your milesstone ID",
         "runName": "Cypress Run",
         "closeRun": false,
         "screenshots": true
     }
 }
+
+
+console.log(hello)

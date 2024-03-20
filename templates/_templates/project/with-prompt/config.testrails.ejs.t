@@ -10,41 +10,24 @@ const {
 module.exports = defineConfig({
   chromeWebSecurity: false,
   trashAssetsBeforeRuns: true,
-  defaultCommandTimeout: 40000,
+  defaultCommandTimeout: 50000,
   viewportWidth: 1920,
   viewportHeight: 1080,
   numTestsKeptInMemory: 1,
-  video: true,
+  video: false,
+  pageLoadTimeout: 20000,
   screenshotOnRunFailure: false,
   videoCompression: 0,
-  pageLoadTimeout: 25000,
-  reporter: "cypress-testrail-reporter",
-  numTestsKeptInMemory: 0,
-  reporterOptions: {
-    host: "enter host name",
-    projectId: 123,
-    username: "enter username here",
-    password: "enter username here",
-    suiteId: 123,
-    includeAllInTestRun: false,
-    allowFailedScreenshotUpload: true,
-    useKnownIssueFeature: true,
 
-  },
-  retries: {
-    "runMode": 1,
-    "openMode": 0
-  },
   e2e: {
-
     setupNodeEvents(on, config) {
       // implement node event listeners here
-
-      return require('./cypress/plugins/index.js')(on, config)
-
+      on('before:run', (details) => {
+        /* code that needs to run before all specs */
+      })
     },
-    testIsolation: "legacy"
+    testIsolation: false,
   },
-  projectId: 'c6hcxy',
+  experimentalInteractiveRunEvents: true, // use for cypress open mode
 });
 

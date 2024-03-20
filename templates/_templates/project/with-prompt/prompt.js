@@ -13,9 +13,6 @@ module.exports = [{
     name: 'configure',
     message: 'Do you want configure testrail?',
   },
-  {
-    message: 'Do you want configure testrail?',
-  },
   // {
   //   type: 'input',
   //   name: 'projectId',
