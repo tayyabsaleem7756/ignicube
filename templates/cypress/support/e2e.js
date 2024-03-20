@@ -1,20 +1,24 @@
-// ***********************************************************
-// This example support/e2e.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+import e2eCommands from './e2e/commands'
 
-// Import commands.js using ES2015 syntax:
-import './commands'
+/**
+ * Main function
+ * Initializes global commands
+ */
+const initialize = () => {
+  // Initialize e2e commands
+  Object.keys(e2eCommands).forEach((name: any) => {
+    Cypress.Commands.add(name, e2eCommands[name])
+  })
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+  Cypress.on('uncaught:exception', () => {
+    return false
+  })
+
+  // Display spec file name on top of suite
+  Cypress.Allure.reporter.getInterface().defineSuiteLabels((titlePath, fileInfo) => {
+    titlePath[0] = `${fileInfo.name} | ${titlePath[0]}`;
+    return titlePath;
+  });
+}
+
+initialize()
