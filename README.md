@@ -4,12 +4,7 @@
 
 </br>
 
-## Table of contents
-
-- [Setting up your project with few commands](#Setting up your project with few commands)
-  - [Installation Guide](#installation)
-
-## Setting up your project with few commands
+## Seeting up your project with few commands
 
 ### Installation Guide
 
