@@ -1,5 +1,5 @@
-<h1 align="center">Welcome to cypress/testrail-boilerplate 👋</h1>
-<div align="center">Speedy start new projects, and start coding immediately with an <b>already pre-configured</b> project. While using this boilerplate you and your team can focus <b>more on coding</b>, and <b>less wory</b> about configuration. This boilerplate is full of useful plugins already configured, and much more! Good luck!
+<h1 align="center">Good to see you here cypress-testrail-boilerplate </h1![alt ignicube](Logo.png)>
+<div align="center">Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can center more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
 </br>
@@ -17,7 +17,7 @@
 
 Keep in mind that my-application is default name of your project but you can update while cloning this repository
 ```sh
-npx npx git@github.com:tayyabsaleem7756/igni.git my-application
+npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
 
 Install dependencies:
@@ -26,7 +26,7 @@ First, move into new created project folder. Keep in mind that my-application is
 cd my-application
 
 ```
-npm will automatically install all dependencies
+npm(node package manager) will automatically install all dependencies
 ```sh
 npm install
 
