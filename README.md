@@ -10,7 +10,9 @@ Logo.png
 - [Getting started](#getting-started)
   - [Installation](#installation)
 
-
+<a href="">
+  <img alt="Cypress" src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" target="_blank" />
+</a>
 ## Getting started
 
 ### Installation
