@@ -6,10 +6,10 @@
 
 ## Table of contents
 
-- [Seeting up your project with few commands](#getting-started)
+- [Setting up your project with few commands](#Setting up your project with few commands)
   - [Installation Guide](#installation)
 
-## Seeting up your project with few commands
+## Setting up your project with few commands
 
 ### Installation Guide
 
