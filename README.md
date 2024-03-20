@@ -8,7 +8,7 @@
 
 ### Installation Guide
 
-Keep in mind that my-application is default name of your project but you can update while cloning this repository
+Keep in mind, (my-application) name of your project but you can update while cloning this repository
 ```sh
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
