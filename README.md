@@ -3,9 +3,8 @@
 </div>
 
 </br>
-![alt scs](Logo-2.png)
-![alt fdfsfs](Logo-1.png)
 
+Logo.png
 ## Table of contents
 
 - [Getting started](#getting-started)
