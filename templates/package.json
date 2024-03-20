@@ -9,5 +9,8 @@
     "pretest": ""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.0"
+  }
 }

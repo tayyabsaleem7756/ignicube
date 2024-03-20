@@ -14,4 +14,3 @@ to: "<%= configure ? 'cypress.env.json' : null %>"
 }
 
 
-console.log(hello)
