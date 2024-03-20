@@ -13,7 +13,7 @@ Keep in mind, (my-application) name of your project but you can update while clo
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
 
-Install dependencies</br>
+### Install dependencies</br>
 First, move into project folder.
 ```sh
 cd my-application
