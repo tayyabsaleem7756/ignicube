@@ -1,7 +1,6 @@
 ---
-inject: true
 to: <%- project %>cypress.env.json
-skip_if: <%= configure = true %>
+skip_if: <%= configure = false %>
 ---
 const {
   defineConfig
