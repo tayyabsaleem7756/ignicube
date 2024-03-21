@@ -8,7 +8,7 @@
 
 ### Installation Guide
 
-Keep in mind, `(> my-application)` name of your project but you can update while cloning this repository
+Keep in mind, `my-application` name of your project but you can update while cloning this repository
 ```sh
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
@@ -25,9 +25,9 @@ npm install
 
 ```
 
-### Add a new product
+### Create a new project
 
-`product` refers to your project(name).
+`project` refers to your project(name).
 
 ```sh
 $ npm run add project
@@ -36,12 +36,12 @@ $ npm run add project
 This command will prompt you for your:
 
 - **prodject** name
-- **baseUrl** (www.mytestdomain.com)
+- **baseUrl** (e.g. www.mytestdomain.com)
 
-The third confirmation is for testrail configuration if you want to configure so type y, 
+The third confirmation is for `testrail configuration` if you want to configure so type y, 
 - **Do you want configure testrail?'** (y/N)
 
-### Almost Done
+### Setup almost Done !
 
 
 
@@ -50,12 +50,15 @@ The third confirmation is for testrail configuration if you want to configure so
 
 
 
-The command from above would create the following structure and inject new scripts in package.json.
+
+
+
+
+------------------------------------------------------------
+
+These command from above would create the following structure 
 
 ```
-- configs/
-  - foo/
-    default.ts
 - fixtures/
   - foo/
     - routes.json
@@ -69,27 +72,6 @@ The command from above would create the following structure and inject new scrip
     - index.ts
 ```
 
-## Run
-
-```sh
-$ npm run foo-staging
-```
-
-> You can see that the generator has injected 3 default scripts into package.json
-
-```json
-{
-  ...
-  "scripts": {
-    "foo-staging": "cypress run -e product=foo,env=staging",
-    "foo-release": "cypress run -e product=foo,env=release",
-    "foo-production": "cypress run -e product=foo,env=production",
-  }
-  ...
-}
-```
-
-When run, it will specify only the test files in `cypress/e2e/foo`.
 
 ## How we use it
 
