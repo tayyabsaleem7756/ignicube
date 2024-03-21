@@ -7,14 +7,14 @@ to: cypress/fixtures/<%- project %>/users.json
   <% environments.forEach((env, index) => { %>
   "<%= env %>": {
     "primary": {
-      "name": "User name",
-      "email": "test@cypress_template_test.com",
-      "password": "user password"
+      "name": "username",
+      "email": "test@testdomain.com",
+      "password": "password"
     },
     "secondary": {
-      "name": "User name",
-      "email": "test@cypress_template_test.com",
-      "password": "user password"
+      "name": "username",
+      "email": "test@testdomain.com",
+      "password": "password"
     }
   }<%= environments.length - 1 === index ? '': ',' -%>
   <% }) %>
