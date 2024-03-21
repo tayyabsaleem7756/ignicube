@@ -1,8 +1,8 @@
 ---
-to: cypress/core/pages.js
+to: cypress/core/pageObject/pages.js
 force: true
 ---
-// Place for this project
+// Place pages for this project
 
 
 

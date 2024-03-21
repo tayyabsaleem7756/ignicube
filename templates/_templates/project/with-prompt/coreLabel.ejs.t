@@ -1,8 +1,8 @@
 ---
-to: cypress/core/labels.js
+to: cypress/core/pageObject/labels.js
 force: true
 ---
-// Place for this project
+// Place labels for this project
 
 
 
