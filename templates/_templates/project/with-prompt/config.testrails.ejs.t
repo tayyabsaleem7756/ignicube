@@ -1,5 +1,5 @@
 ---
-to: cypress/cypress.config.js 
+to: cypress.config.js 
 force: true
 ---
 
