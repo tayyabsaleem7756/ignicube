@@ -1,5 +1,5 @@
 ---
-to: cypress/support/e2e/<%= project %>/index.ts
+to: cypress/support/e2e/<%= project %>/index.js
 ---
 
 import commands from './commands'
