@@ -18,17 +18,23 @@ module.exports = defineConfig({
   pageLoadTimeout: 20000,
   screenshotOnRunFailure: false,
   videoCompression: 0,
+  retries: {
+    runMode: 1,
+    openMode: 1,
+  },
 
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      return require('./cypress/plugins/index.js')(on, config)
       on('before:run', (details) => {
         /* code that needs to run before all specs */
+        
       })
     },
     testIsolation: false,
-    supportFile: false,
+    supportFile: false
   },
-  experimentalInteractiveRunEvents: true, // use for cypress open mode
+  experimentalInteractiveRunEvents: false, // use for cypress open mode
 });
 
