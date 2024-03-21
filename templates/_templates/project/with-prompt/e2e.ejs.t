@@ -1,5 +1,5 @@
 ---
-to: cypress/cypress/e2e/<%- project %>/default.cy.js
+to: cypress/e2e/<%- project %>/default.cy.js
 ---
 /// <reference types='cypress'/>
 Cypress._.times(1, () => {
