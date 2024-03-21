@@ -1,11 +1,6 @@
-/// <reference types="cypress" />
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const TestRailReporter = require('cypress-testrail');
 
-export default (on, config) => {
-  config = require('cypress-setup-utilities')(on, config)
-  require('cypress-store')(on, config)
-
-  allureWriter(on, config);
-
+module.exports = (on, config) => {
+  new TestRailReporter(on, config).register();
   return config
 }

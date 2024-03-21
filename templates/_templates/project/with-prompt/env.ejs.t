@@ -2,6 +2,7 @@
 to: "<%= configure ? 'cypress.env.json' : null %>"
 ---
 {
+    "baseUrl": "<%= baseUrl %>",
     "testrail": {
         "domain": "Enter your domain e.g. https://sample.testrail.io/",
         "projectId": "Enter your project ID e.g P2",
