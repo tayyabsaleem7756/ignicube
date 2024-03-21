@@ -27,7 +27,7 @@ function main() {
   console.log('\nRun the following commands to add your first project:')
   console.log(`1. cd ${args[0] || './tayyabsaleem7756/'}`)
   console.log('2. npm install')
-  console.log('3. npm run add project')
+  console.log('3. npm run add-project')
 }
 
 if (require.main === module) {
