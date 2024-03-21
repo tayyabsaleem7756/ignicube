@@ -8,7 +8,7 @@
 
 ### Installation Guide
 
-Keep in mind, (my-application) name of your project but you can update while cloning this repository
+Keep in mind, `(> my-application)` name of your project but you can update while cloning this repository
 ```sh
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
@@ -24,26 +24,31 @@ npm(node package manager) will automatically install all dependencies
 npm install
 
 ```
--------------------------------------------------------------------
--------------------------------------------------------------------
-
-
-
-
-
 
 ### Add a new product
 
-`product` refers to your project.
+`product` refers to your project(name).
 
 ```sh
-$ npm run add-project
+$ npm run add project
 ```
 
-It will ask you for your:
+This command will prompt you for your:
 
-- **product** name
-- **baseUrl**
+- **prodject** name
+- **baseUrl** (www.mytestdomain.com)
+
+The third confirmation is for testrail configuration if you want to configure so type y, 
+- **Do you want configure testrail?'** (y/N)
+
+### Almost Done
+
+
+
+
+
+
+
 
 The command from above would create the following structure and inject new scripts in package.json.
 
