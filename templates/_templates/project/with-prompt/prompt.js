@@ -6,7 +6,7 @@ module.exports = [{
   {
     type: 'input',
     name: 'baseUrl',
-    message: 'What is the baseUrl for this project?',
+    message: 'What is the baseUrl for this project? e.g(www.mydomain.com)',
   },
   {
     type: 'confirm',
