@@ -2,7 +2,7 @@
 to: cypress/core/pageObject/action/pageActions.js
 force: true
 ---
-// You can add multiple actions for different page/ module
+// 
 
 import * as elements from '../../elements'
 import * as labels from '../../labels'
