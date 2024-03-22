@@ -2,11 +2,12 @@
 to: cypress/core/pageObject/pages.js
 force: true
 ---
-// import accountActions from './actions/general/accountActions'
+// 
+import defaultActions from './actions/defaultActions'
 
 
 export {
-    accountActions, 
+    defaultActions, 
 }
 
 
