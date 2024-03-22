@@ -1,5 +1,5 @@
 ---
-to: cypress/core/pageObject/action/pageLabels.js
+to: cypress/core/pageObject/labels/pageLabels.js
 force: true
 ---
 // 

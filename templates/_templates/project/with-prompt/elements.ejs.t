@@ -1,5 +1,5 @@
 ---
-to: cypress/core/pageObject/action/pageElements.js
+to: cypress/core/pageObject/elements/pageElements.js
 force: true
 ---
 // 
