@@ -2,7 +2,13 @@
 to: cypress/core/pageObject/pages.js
 force: true
 ---
-// Place pages for this project
+// import accountActions from './actions/general/accountActions'
+
+
+export {
+    accountActions, 
+}
+
 
 
 
