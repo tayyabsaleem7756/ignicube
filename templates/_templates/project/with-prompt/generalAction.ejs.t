@@ -1,5 +1,5 @@
 ---
-to: cypress/core/pageObject/action/generalActions.js
+to: cypress/core/pageObject/actions/generalActions.js
 force: true
 ---
 // 

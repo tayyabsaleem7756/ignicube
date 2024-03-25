@@ -5,7 +5,7 @@ force: true
 // Place labels for this project
 
 
-import defaultLabel from './labels/defaultLabel'
+import defaultLabel from './labels/pageLabels'
 
 
 

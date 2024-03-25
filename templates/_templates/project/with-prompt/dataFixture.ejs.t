@@ -1,5 +1,5 @@
 ---
-to: cypress/fixtures/<%- project %>/data.json
+to: cypress/fixtures/<%- project %>/data.js
 ---
 //
 const defaultData = {
