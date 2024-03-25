@@ -4,11 +4,11 @@ to: cypress/fixtures/<%- project %>/data.js
 //
 const defaultData = {
     input: "glaxy",
-    
+
 }
 
 const data = {
-    createFund,
+    defaultData,
 }
 
 export default data

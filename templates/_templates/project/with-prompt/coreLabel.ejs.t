@@ -5,11 +5,11 @@ force: true
 // Place labels for this project
 
 
-import defaultLabel from './labels/pageLabels'
+import pageLabels from './labels/pageLabels'
 
 
 
 export {
-    defaultLabel,
+    pageLabels,
 }
 
