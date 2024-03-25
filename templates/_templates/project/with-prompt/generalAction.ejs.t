@@ -212,7 +212,7 @@ const canvasDragandDropUsingXpath = (value, x, y) => {
 
 const generalActions = {
 
-    LoginForAdmin,
+    login,
     getElementUsingLocator,
     getElementUsingLabel,
     clickButtonUsingLabel,

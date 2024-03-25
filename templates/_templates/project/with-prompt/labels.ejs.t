@@ -4,11 +4,11 @@ force: true
 ---
 // You can add multiple labels for different page/ module
 
-const loginLabel = "Login"
+const googleSearchLabel = "Google Search"
 
 const defaultLabel = {
-    loginLabel,
-    
+    googleSearchLabel,
+
 
 }
 

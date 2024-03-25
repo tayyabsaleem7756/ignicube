@@ -4,11 +4,11 @@ force: true
 ---
 // You can add multiple elements for different page/ module
 
-const submitButton = 'button'
+const googleInput = 'textarea[title="Search"]'
 
 const defaultElement = {
-    submitButton,
-    
+    googleInput,
+
 
 }
 

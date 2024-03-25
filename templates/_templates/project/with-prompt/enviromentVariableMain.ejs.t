@@ -3,6 +3,7 @@ to: "<%= configure ? 'cypress.env.json' : null %>"
 ---
 {
     "baseUrl": "http://<%= baseUrl %>/",
+    "demoURL": "https://www.google.com/",
     "username": "enter username",
     "password": "enter password",
     "testrail": {

@@ -5,10 +5,10 @@ force: true
 // Place elements for this project
 
 
-import defaultElement from './elements/defaultElement'
+import pageElements from './elements/pageElements'
 
 
 export {
-    defaultElement,
+    pageElements,
 }
 
