@@ -7,7 +7,7 @@ force: true
 import * as elements from '../elements'
 import * as labels from '../labels'
 import * as pages from '../pages'
-import data from '../../../fixtures/bellman/data'
+import data from '../../../fixtures/<%- project %>/data'
 
 
 const verifyDefaultSccanerio = () => {

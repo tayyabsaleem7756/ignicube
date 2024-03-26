@@ -298,6 +298,6 @@ cy.get('[data-cy="file-input"]')
 
 ## Brief
 
-- No configuring the project With a clean, intuitive, and same project structure we keep everyone consistent across all projects.
+-  .
 
 
