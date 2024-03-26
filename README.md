@@ -230,15 +230,9 @@ describe('Should visit admin', () => {
 Here is a simple flow chart:
 
 ```mermaid
-graph TD;
-    IT BLOCK-->ACTION;
-    IT BLOCK-->ELEMENTS;
-    IT BLOCK-->LABELS;
-```
-```
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
 ```
