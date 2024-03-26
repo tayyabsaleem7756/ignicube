@@ -278,5 +278,19 @@ it("Can authenticate a valid user C321", ...
 it("C123Can authenticate a valid user", ...
 it("Can authenticate a valid userC123", ...
 ```
-------------------------------------------------------------
+
+### Cypress File Upload-Enbeded
+Presently, let's see how we are able really test something. Uncovered command has signature like
+
+`Drag-n-drop component`
+```js
+cy.get('[data-cy="dropzone"]')
+  .attachFile('myfixture.json', { subjectType: 'drag-n-drop' });
+```
+
+`Attaching multiple files`
+```js
+cy.get('[data-cy="file-input"]')
+  .attachFile(['myfixture1.json', 'myfixture2.json']);
+```
 
