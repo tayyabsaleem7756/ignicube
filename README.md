@@ -44,9 +44,28 @@ The third confirmation is for `testrail configuration` if you want to configure 
 ### Setup almost Done !
 
 
+The command from above would create the following structure and inject new scripts in package.json.
 
-
-
+```
+- core/
+  - actions/
+    - generalActions.js
+    - pageActions.js
+  - elements/
+    - pageElements.js
+  - labels/
+    - pageLabels
+    elements.js
+    fixture.js
+    labels.js
+    pages.js
+- e2e/
+    - default.cy.js
+- plugins/
+    - index.js
+- cypress.env.json
+- cypress.config.js
+```
 
 
 
