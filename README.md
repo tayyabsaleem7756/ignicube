@@ -244,19 +244,28 @@ describe('Should visit admin', () => {
 * Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
 Note: cypress retry logic must be enabled for this feature.*
 
+Preview: cypress.env.json
 ```json
 {
     "testrail": {
-        "domain": "https://sample.testrail.io/", // Enter your testrail domain e.g. 
+        "domain": "https://sample.testrail.io/", // Enter your testrail domain/ host
+        "username": "Enter username", // Enter your testrail username
+        "password": "Enter password", // Enter your testrail password
         "projectId": "P2", //Enter your project ID
-        "milestoneId": "9", //Enter your milesstone ID
+        "milestoneId": "9", 
         "suiteId": "Enter your milesstone ID",
-        "runName": "Cypress Run", //Enter your milesstone ID
+        "runName": "Cypress Run", 
         "closeRun": false,
-        "screenshots": true // Will save Screenshots 
+        "screenshots": true 
+    },
+      "retries": {
+        "runMode": 1,
+        "openMode": 0
     }
 }
 ```
+
+<div >Only need to add domain/ host, username, password and project id `each thing is done`</div>
 
 
 
