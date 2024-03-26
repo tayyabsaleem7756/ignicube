@@ -232,5 +232,5 @@ Here is a simple flow chart:
 ```mermaid
 graph LR
 A(it block) -->B(action's) --> C(elements's/ label's/ fixture's)
-A(it block) -->B(action's)
+A(it blocknfda) -->B(action's)
 ```
