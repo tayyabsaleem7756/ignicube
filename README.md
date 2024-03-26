@@ -248,10 +248,10 @@ Preview: `cypress.env.json`
 ```json
 {
     "testrail": {
-        "domain": "https://sample.testrail.io/", // Enter your testrail domain/ host
-        "username": "Enter username", // Enter your testrail username
-        "password": "Enter password", // Enter your testrail password
-        "projectId": "P2", //Enter your project ID
+        "domain": "my-company.testrail.io",
+        "username": "myUser",
+        "password": "myPwd",
+        "projectId": "P2", 
         "milestoneId": "9", 
         "suiteId": "S3",
         "runName": "Cypress Run", 
