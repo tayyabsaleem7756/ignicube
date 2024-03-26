@@ -231,10 +231,9 @@ Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    IT BLOCK-->ACTION;
+    IT BLOCK-->ELEMENTS;
+    IT BLOCK-->LABELS;
 ```
 ```
 graph TD;
