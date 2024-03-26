@@ -188,7 +188,7 @@ describe('Should visit admin', () => {
 
 ### fixtures/credentials.json
 
-Here is the place to define your primary, seconday, etc. users list for your tests.
+Here is the place to define your user's list, etc. users list for your tests.
 
 By default, you can see
 
@@ -225,7 +225,14 @@ describe('Should visit admin', () => {
   })
 })
 ```
-
-`users` will always return users from current set environment, which in this case, is `release`.
 ------------------------------------------------------------
 
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
