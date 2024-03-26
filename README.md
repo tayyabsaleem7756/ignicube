@@ -81,7 +81,7 @@ This file structure explains below.
 
 Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels
 
-Here may be a straightforward stream, that how files intreract with eachother:
+Here may be a `straightforward stream` that how files intreract with eachother:
 
 ```mermaid
 graph LR
@@ -232,11 +232,16 @@ describe('Should visit admin', () => {
   })
 })
 ```
+<h1 >Checkout a few plugins recorded underneath</h1>
+<div >Plugins empower you to tap into, adjust, or expand the inside behavior of Cypress, some plugins are already enabled</div>
+
+###Cypress Testrail Reporting
+* Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
+* Results are reported immediately after single test execution (real-time reporting)
+* Test run would be closed after last spec(test) file has been finished
+* Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
+* Multi suite project support (set suiteId=1 in cypress.json or set it as a part of runtime environment variables as testRailSuiteId=1)
+* Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
+Note: cypress retry logic must be enabled for this feature.*
 ------------------------------------------------------------
 
-Here may be a straightforward stream, that how files intreract with eachother:
-
-```mermaid
-graph LR
-A(it block) -->B(action's) --> C(elements's/ label's/ fixture's)
-```
