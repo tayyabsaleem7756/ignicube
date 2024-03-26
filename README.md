@@ -30,7 +30,7 @@ npm install
 `project` refers to your project(name).
 
 ```sh
-$ npm run 
+$ npm run add-project
 ```
 
 This command will prompt you for your:
@@ -47,7 +47,7 @@ The third confirmation is for `testrail configuration` if you want to configure 
 The command from above would create the following structure and inject new scripts in package.json.
 
 ```
-- core/
+- core/pageObject
   - actions/
     - generalActions.js
     - pageActions.js
@@ -66,8 +66,18 @@ The command from above would create the following structure and inject new scrip
 - cypress.env.json
 - cypress.config.js
 ```
+This file structure explain below.
 
-
+| file structure     |  description                                              |
+| ------------------ |  -------------------------------------------------------- |
+| `core/ pageObject` |   contains `objects modal` folder and file                |
+| `actions/`         |   contains `action's` on page (e.g. verify, add, edit)    |
+| `elements/`        |   contains `element's` on page                            |
+| `labels/`          |   contains `labels` for elements                          |
+| `elements.js`      |   cobimed `elements` of system will export in this file   |
+| `fixture.js`       |   cobimed `elements` of system will export in this file   |
+| `labels.js`        |   cobimed `labels` of system will export in this file     |
+| `pages.js`         |   cobimed `action's` of system will export in this file   |
 
 
 
