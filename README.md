@@ -280,6 +280,8 @@ it("Can authenticate a valid userC123", ...
 ```
 
 ### Cypress File Upload-Enbeded Plugin
+
+
 Presently, let's see how we are able really test something. Uncovered command has signature like
 
 Drag-n-drop component
