@@ -240,11 +240,11 @@ describe('Should visit admin', () => {
 * Results are reported immediately after single test execution (real-time reporting)
 * Test run would be closed after last spec(test) file has been finished
 * Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
-* Multi suite project support (set suiteId=1 in cypress.json or set it as a part of runtime environment variables as testRailSuiteId=1)
+* Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
 * Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
-Note: cypress retry logic must be enabled for this feature.*
+Note: cypress retry logic must be enabled for this feature, retry logic is enabled in below configuration.*
 
-Preview: cypress.env.json
+Preview: `cypress.env.json`
 ```json
 {
     "testrail": {
@@ -253,7 +253,7 @@ Preview: cypress.env.json
         "password": "Enter password", // Enter your testrail password
         "projectId": "P2", //Enter your project ID
         "milestoneId": "9", 
-        "suiteId": "Enter your milesstone ID",
+        "suiteId": "S3",
         "runName": "Cypress Run", 
         "closeRun": false,
         "screenshots": true 
@@ -265,9 +265,18 @@ Preview: cypress.env.json
 }
 ```
 
-<div >Only need to add domain/ host, username, password and project id `each thing is done`</div>
+<div >Only need to add domain/ host, username, password and project id, each thing is done</div>
 
+Your Cypress tests(it block) should include the ID of your TestRail test case. Make sure your test case IDs are distinct from your test titles:
 
+```js
+// Good:
+it("C123 C124 Can authenticate a valid user", ...
+it("Can authenticate a valid user C321", ...
 
+// Bad:
+it("C123Can authenticate a valid user", ...
+it("Can authenticate a valid userC123", ...
+```
 ------------------------------------------------------------
 
