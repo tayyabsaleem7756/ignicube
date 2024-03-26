@@ -79,9 +79,81 @@ This file structure explains below.
 | `labels.js`        |   cobimed `label's` of system will export in this file    |
 | `pages.js`         |   cobimed `action's` of system will export in this file   |
 
-Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels 
+Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels
 
-Here is the place to define your `baseUrl` and other URLs per each environment.
+### General actions 
+
+There are numerous predefined actions's accessible, by utilizing these action's your code will be rapid and consistant. Some example are listed below
+
+```js
+const login = () => {
+    return cy.adminLogin(Cypress.env('username'), Cypress.env('password'))
+}
+const clickButtonUsingLabel = (label) => {
+    return cy.contains(label).should('be.visible').click({
+        force: true
+    })
+}
+const clickButtonUsingLocator = (locator) => {
+    return cy.get(locator).should('be.visible').click({
+        force: true
+    })
+}
+const typeInDropdownInput = (dropdown_locator, text) => {
+    return cy.get(dropdown_locator).click().type(`${text}{enter}`, {
+        delay: 100
+    })
+}
+const dragandDropUsingXpath = (value, value2) => {
+    const dataTransfer = new DataTransfer();
+    cy.xpath(value).trigger('dragstart', {
+        dataTransfer
+    });
+
+    cy.get(value2).trigger('drop', {
+        dataTransfer
+    });
+}
+const clickButtonUsingXpath = (value) => {
+    cy.xpath(value).click()
+}
+const canvasDragandDropUsingXpath = (value, x, y) => {
+    cy.xpath(value)
+        .trigger('mousedown').trigger("mousemove", {
+            clientX: x,
+            clientY: y
+        })
+        .trigger("mouseup")
+}
+const generalActions = {
+
+    login,
+    clickButtonUsingLabel,
+    clickButtonUsingLocator,
+    typeInDropdownInput,
+    clickButtonUsingXpath,
+    canvasDragandDropUsingXpath,
+    dragandDropUsingXpath,
+}
+
+export default generalActions
+
+```
+Usage:
+
+```js
+import * as pages from '../pages'
+
+describe('Visit', () => {
+  it('Visit', () => {
+    pages.generalActions.clickButtonUsingLocator(elements.pageElements.googleInput)
+    pages.generalActions.typeInInput(elements.pageElements.googleInput, data.defaultData.input)
+    pages.generalActions.clickButtonUsingLabel(labels.pageLabels.googleSearchLabel)
+  })
+})
+```
+
+In `fixture > project > projectENV.json` define your `baseUrl` and other URLs per each environment.
 
 Preview
 
@@ -89,13 +161,13 @@ Preview
 {
   "staging": {
     "baseUrl": "https://example.com",
-    "admin": "https://example.com/admin"
   },
   "release": {
     "baseUrl": "https://example.com"
   },
   "production": {
-    "baseUrl": "https://example.com"
+    "baseUrl": "https://example.com",
+    "admin": "https://example.com/admin"
   }
 }
 ```
@@ -103,16 +175,57 @@ Preview
 Usage:
 
 ```js
-import { routes } from '../../../support/helpers'
+import { projectENV } from '../../../support/helpers'
 
 describe('Should visit admin', () => {
   it('Visit', () => {
-    cy.visit(routes.admin)
+    cy.visit(projectENV.admin)
   })
 })
 ```
 
-`routes` will always return routes from current set environment, which in this case, is `staging`.
+`projectENV` will always return URL from current set environment, which in this case, is `production`.
 
+### fixtures/credentials.json
+
+Here is the place to define your primary, seconday, etc. users list for your tests.
+
+By default, you can see
+
+Preview
+
+```json
+{
+  "staging": {
+    "sampleUser1": {
+      "name": "User name",
+      "email": "test@cypress_template_test.com",
+      "password": "user password"
+    }
+  },
+  "release": {
+    "sampleUser2": {
+      "name": "User name",
+      "email": "test@cypress_template_test.com",
+      "password": "user password"
+    }
+  },
+}
+```
+
+Usage:
+
+```js
+import { projectENV, credetials } from '../../../support/helpers'
+
+describe('Should visit admin', () => {
+  it('Visit and log in ', () => {
+    cy.visit(projectENV.admin)
+    cy.logIn(credetials.sampleUser2)
+  })
+})
+```
+
+`users` will always return users from current set environment, which in this case, is `release`.
 ------------------------------------------------------------
 
