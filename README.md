@@ -79,7 +79,7 @@ This file structure explain below.
 | `labels.js`        |   cobimed `labels` of system will export in this file     |
 | `pages.js`         |   cobimed `action's` of system will export in this file   |
 
-Best practice: create `separate files for each page/ section`  e.g actions, elements, labels 
+### Best practice: create `separate files for each page/ section`  e.g actions, elements, labels 
 
 
 
