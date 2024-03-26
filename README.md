@@ -235,7 +235,7 @@ describe('Should visit admin', () => {
 <h1 >Checkout a few plugins recorded underneath</h1>
 <div >Plugins empower you to tap into, adjust, or expand the inside behavior of Cypress, some plugins are already enabled</div>
 
-###Cypress Testrail Reporting
+### Cypress Testrail Reporting
 * Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
 * Results are reported immediately after single test execution (real-time reporting)
 * Test run would be closed after last spec(test) file has been finished
