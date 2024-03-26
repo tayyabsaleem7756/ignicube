@@ -235,7 +235,7 @@ describe('Should visit admin', () => {
 <h1 >Checkout a few plugins recorded underneath</h1>
 <div >Plugins empower you to tap into, adjust, or expand the inside behavior of Cypress, some plugins are already enabled</div>
 
-### Cypress Testrail Reporting
+### Cypress Testrail Reporting-Enbeded Plugin
 * Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
 * Results are reported immediately after single test execution (real-time reporting)
 * Test run would be closed after last spec(test) file has been finished
@@ -279,18 +279,24 @@ it("C123Can authenticate a valid user", ...
 it("Can authenticate a valid userC123", ...
 ```
 
-### Cypress File Upload-Enbeded
+### Cypress File Upload-Enbeded Plugin
 Presently, let's see how we are able really test something. Uncovered command has signature like
 
-`Drag-n-drop component`
+Drag-n-drop component
 ```js
 cy.get('[data-cy="dropzone"]')
   .attachFile('myfixture.json', { subjectType: 'drag-n-drop' });
 ```
 
-`Attaching multiple files`
+Attaching multiple files
 ```js
 cy.get('[data-cy="file-input"]')
   .attachFile(['myfixture1.json', 'myfixture2.json']);
 ```
+
+## Brief
+
+- Project is dynamically set up based on the three arguments above
+- No configuring the project With a clean, intuitive, and same project structure we keep everyone consistent across all projects.
+
 
