@@ -4,7 +4,7 @@
 
 </br>
 
-## Seeting up your project with few commands
+## Setting up your project with few commands
 
 ### Installation Guide
 
@@ -66,22 +66,53 @@ The command from above would create the following structure and inject new scrip
 - cypress.env.json
 - cypress.config.js
 ```
-This file structure explain below.
+This file structure explains below.
 
 | file structure     |  description                                              |
 | ------------------ |  -------------------------------------------------------- |
 | `core/ pageObject` |   contains `objects modal` folder and file                |
 | `actions/`         |   contains `action's` on page (e.g. verify, add, edit)    |
 | `elements/`        |   contains `element's` on page                            |
-| `labels/`          |   contains `label's` for elements                          |
-| `elements.js`      |   cobimed `element's` of system will export in this file   |
-| `fixture.js`       |   cobimed `element's` of system will export in this file   |
-| `labels.js`        |   cobimed `label's` of system will export in this file     |
+| `labels/`          |   contains `label's` for elements                         |
+| `elements.js`      |   cobimed `element's` of system will export in this file  |
+| `fixture.js`       |   cobimed `element's` of system will export in this file  |
+| `labels.js`        |   cobimed `label's` of system will export in this file    |
 | `pages.js`         |   cobimed `action's` of system will export in this file   |
 
-Best practice: create `separate files for each page/ section`  e.g actions, elements, labels 
+Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels 
 
+Here is the place to define your `baseUrl` and other URLs per each environment.
 
+Preview
+
+```json
+{
+  "staging": {
+    "baseUrl": "https://example.com",
+    "admin": "https://example.com/admin"
+  },
+  "release": {
+    "baseUrl": "https://example.com"
+  },
+  "production": {
+    "baseUrl": "https://example.com"
+  }
+}
+```
+
+Usage:
+
+```js
+import { routes } from '../../../support/helpers'
+
+describe('Should visit admin', () => {
+  it('Visit', () => {
+    cy.visit(routes.admin)
+  })
+})
+```
+
+`routes` will always return routes from current set environment, which in this case, is `staging`.
 
 ------------------------------------------------------------
 
