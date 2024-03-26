@@ -243,5 +243,22 @@ describe('Should visit admin', () => {
 * Multi suite project support (set suiteId=1 in cypress.json or set it as a part of runtime environment variables as testRailSuiteId=1)
 * Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
 Note: cypress retry logic must be enabled for this feature.*
+
+```json
+{
+    "testrail": {
+        "domain": "https://sample.testrail.io/", // Enter your testrail domain e.g. 
+        "projectId": "P2", //Enter your project ID
+        "milestoneId": "9", //Enter your milesstone ID
+        "suiteId": "Enter your milesstone ID",
+        "runName": "Cypress Run", //Enter your milesstone ID
+        "closeRun": false,
+        "screenshots": true // Will save Screenshots 
+    }
+}
+```
+
+
+
 ------------------------------------------------------------
 
