@@ -81,6 +81,13 @@ This file structure explains below.
 
 Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels
 
+Here may be a straightforward stream, that how files intreract with eachother:
+
+```mermaid
+graph LR
+A(it block) -->B(action's) --> C(elements's/ label's/ fixture's)
+```
+
 ### General actions 
 
 There are numerous predefined actions's accessible, by utilizing these action's your code will be rapid and consistant. Some example are listed below
@@ -227,10 +234,9 @@ describe('Should visit admin', () => {
 ```
 ------------------------------------------------------------
 
-Here is a simple flow chart:
+Here may be a straightforward stream, that how files intreract with eachother:
 
 ```mermaid
 graph LR
 A(it block) -->B(action's) --> C(elements's/ label's/ fixture's)
-A(it blocknfda) -->B(action's)
 ```
