@@ -231,7 +231,5 @@ Here is a simple flow chart:
 
 ```mermaid
 graph LR
-A(IT BLOCK) -->B{ACTION}
-    C --> D[Result one]
-    C --> E[Result two]
+A(IT BLOCK) -->B(ACTION) --> C(ELEMENT/ LABELS/ FIXTURE)
 ```
