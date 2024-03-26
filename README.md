@@ -231,8 +231,7 @@ Here is a simple flow chart:
 
 ```mermaid
 graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+A(IT BLOCK) -->B{ACTION}
+    C --> D[Result one]
+    C --> E[Result two]
 ```
