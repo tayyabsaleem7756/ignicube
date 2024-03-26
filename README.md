@@ -73,10 +73,10 @@ This file structure explain below.
 | `core/ pageObject` |   contains `objects modal` folder and file                |
 | `actions/`         |   contains `action's` on page (e.g. verify, add, edit)    |
 | `elements/`        |   contains `element's` on page                            |
-| `labels/`          |   contains `labels` for elements                          |
-| `elements.js`      |   cobimed `elements` of system will export in this file   |
-| `fixture.js`       |   cobimed `elements` of system will export in this file   |
-| `labels.js`        |   cobimed `labels` of system will export in this file     |
+| `labels/`          |   contains `label's` for elements                          |
+| `elements.js`      |   cobimed `element's` of system will export in this file   |
+| `fixture.js`       |   cobimed `element's` of system will export in this file   |
+| `labels.js`        |   cobimed `label's` of system will export in this file     |
 | `pages.js`         |   cobimed `action's` of system will export in this file   |
 
 #### Best practice: create `separate files for each page/ section`  e.g actions, elements, labels 
