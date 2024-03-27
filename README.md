@@ -13,7 +13,7 @@ Keep in mind, `my-application` name of your project but you can update while clo
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
 
-### Install dependencies</br>
+## Install dependencies</br>
 First, move into project folder.
 ```sh
 cd my-application
@@ -25,7 +25,7 @@ npm install
 
 ```
 
-### Create a new project
+## Create a new project
 
 `project` refers to your project(name).
 
@@ -41,7 +41,7 @@ This command will prompt you for your:
 The third confirmation is for `testrail configuration` if you want to configure so type y, 
 - **Do you want configure testrail?'** (y/N)
 
-### Setup almost Done !
+## Setup almost Done !
 
 
 The command from above would create the following structure and inject new scripts in package.json. Rest of cypress project will remain as it is 
