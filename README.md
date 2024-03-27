@@ -243,7 +243,7 @@ describe('Should visit admin', () => {
 * Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
 * Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
 * Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
-Note: cypress retry logic must be enabled for this feature, `retry logic is enabled in below configuration`
+</br>Note: cypress retry logic must be enabled for this feature, `retry logic is enabled in below configuration`
 
 Preview: `cypress.env.json`
 ```json
