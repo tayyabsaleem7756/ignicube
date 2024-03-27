@@ -7,7 +7,7 @@ cypress/reports/
 cypress/downloads/
 cypress.local*.ts
 users.local*.json
-
+templates/cypress/support/helpers.js
 # OS specific
 .DS_Store
 
