@@ -1,5 +1,5 @@
 <h1 >Good to see you in cypress-testrail-boilerplate</h1>
-<div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can center more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
+<div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can focus more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
 </br>
@@ -74,10 +74,10 @@ This file structure explains below.
 | `actions/`         |   contains `action's` on page (e.g. verify, add, edit)    |
 | `elements/`        |   contains `element's` on page                            |
 | `labels/`          |   contains `label's` for elements                         |
-| `elements.js`      |   cobimed `element's` of system will export in this file  |
-| `fixture.js`       |   cobimed `element's` of system will export in this file  |
-| `labels.js`        |   cobimed `label's` of system will export in this file    |
-| `pages.js`         |   cobimed `action's` of system will export in this file   |
+| `elements.js`      |   cobined `element's` of system will export in this file  |
+| `fixture.js`       |   cobined `element's` of system will export in this file  |
+| `labels.js`        |   cobined `label's` of system will export in this file    |
+| `pages.js`         |   cobined `action's` of system will export in this file   |
 
 Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels
 
@@ -237,13 +237,13 @@ describe('Should visit admin', () => {
 
 ## Cypress Testrail Reporting-Enbeded Plugin
 
-* Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
+* If you run multiple spec (test) files that are part of the same suite, the test results are combined under a single test run.
 * Results are reported immediately after single test execution (real-time reporting)
 * Test run would be closed after last spec(test) file has been finished
 * Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
 * Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
 * Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
-Note: cypress retry logic must be enabled for this feature, retry logic is enabled in below configuration.*
+Note: cypress retry logic must be enabled for this feature, `retry logic is enabled in below configuration`
 
 Preview: `cypress.env.json`
 ```json
@@ -272,32 +272,34 @@ Your Cypress tests(it block) should include the ID of your TestRail test case. M
 
 ```js
 // Good:
-it("C123 C124 Can authenticate a valid user", ...
-it("Can authenticate a valid user C321", ...
+it("C1 C2 Can authenticate a valid user", ...
+it("Can authenticate a valid user C12", ...
 
 // Bad:
-it("C123Can authenticate a valid user", ...
-it("Can authenticate a valid userC123", ...
+it("C1Can authenticate a valid user", ...
+it("Can authenticate a valid userC2", ...
 ```
 
 ## Cypress File Upload-Enbeded Plugin
 
 Presently, let's see how we are able really test something. Uncovered command has signature like
 
-Drag-n-drop component
+Drag-n-drop component, this function is already available in general action
 ```js
-cy.get('[data-cy="dropzone"]')
-  .attachFile('myfixture.json', { subjectType: 'drag-n-drop' });
+const uploadFileUsingLocatorDandD = (locator, path) => {
+    return cy.get(locator).attachFile(path, {
+        action: 'drag-drop'
+    })
+}
 ```
 
 Attaching multiple files
 ```js
 cy.get('[data-cy="file-input"]')
-  .attachFile(['myfixture1.json', 'myfixture2.json']);
+  .attachFile(['myfixture.json', 'myfixture.json']);
 ```
 
 ## Brief
 
--  .
-
-
+No configuring the project with a clean, intuitive, and same project structure we keep everyone consistent across all projects.
+Fully object oriented and well structured.

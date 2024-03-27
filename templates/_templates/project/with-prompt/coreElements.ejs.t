@@ -2,7 +2,7 @@
 to: cypress/core/pageObject/elements.js
 force: true
 ---
-// Place elements for this project
+// Place elements for this project 
 
 
 import pageElements from './elements/pageElements'

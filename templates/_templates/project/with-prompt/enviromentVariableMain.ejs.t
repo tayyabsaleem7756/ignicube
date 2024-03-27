@@ -1,6 +1,8 @@
 ---
 to: "<%= configure ? 'cypress.env.json' : null %>"
 ---
+// Contains routes and configuration for plugins e.g. testrail/ run mode
+
 {
     "baseUrl": "http://<%= baseUrl %>/",
     "demoURL": "https://www.google.com/",

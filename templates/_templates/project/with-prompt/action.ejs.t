@@ -2,7 +2,7 @@
 to: cypress/core/pageObject/actions/pageActions.js
 force: true
 ---
-// 
+// This is default scanerio, multiple actions can be added as required for testcase
 
 import * as elements from '../elements'
 import * as labels from '../labels'

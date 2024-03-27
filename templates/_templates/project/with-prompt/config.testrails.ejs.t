@@ -2,6 +2,7 @@
 to: cypress.config.js 
 force: true
 ---
+// This is some basic configuration for cypress, later on you can change it
 
 const {
   defineConfig

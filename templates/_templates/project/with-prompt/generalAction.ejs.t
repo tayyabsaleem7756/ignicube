@@ -2,7 +2,7 @@
 to: cypress/core/pageObject/actions/generalActions.js
 force: true
 ---
-// 
+// Contains some general actions, can be used anytime and also new can be added
 
 const login = () => {
     return cy.adminLogin(Cypress.env('username'), Cypress.env('password'))
