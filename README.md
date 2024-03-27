@@ -86,6 +86,7 @@ Here may be a `straightforward stream` that how files intreract with eachother:
 ```mermaid
 graph LR
 A(it block) -->B(action's) -->C(elements's/ label's/ fixture's) 
+C(elements's/ label's/ fixture's) -->B(action's) -->A(it block)
 A(it block) -->D(Test result)
 ```
 
