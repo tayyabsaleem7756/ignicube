@@ -44,7 +44,7 @@ The third confirmation is for `testrail configuration` if you want to configure 
 ### Setup almost Done !
 
 
-The command from above would create the following structure and inject new scripts in package.json.
+The command from above would create the following structure and inject new scripts in package.json. Rest of cypress project will remain as it is 
 
 ```
 - core/pageObject
