@@ -177,7 +177,6 @@ const dragandDrop = (value, value2) => {
     cy.get(value2).trigger('drop', {
         dataTransfer
     });
-
 }
 const dragandDropUsingXpath = (value, value2) => {
     const dataTransfer = new DataTransfer();
@@ -208,7 +207,6 @@ const canvasDragandDropUsingXpath = (value, x, y) => {
         })
         .trigger("mouseup")
 }
-
 
 const generalActions = {
 
@@ -266,8 +264,6 @@ const generalActions = {
     dragandDropUsingXpath,
     verifyElementText,
     VerifyCheckedNotVisibleUsingLocator
-
-
 }
 
 export default generalActions
