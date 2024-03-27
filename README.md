@@ -30,7 +30,7 @@ npm install
 `project` refers to your project(name).
 
 ```sh
-$ npm run add-project
+npm run add-project
 ```
 
 This command will prompt you for your:
