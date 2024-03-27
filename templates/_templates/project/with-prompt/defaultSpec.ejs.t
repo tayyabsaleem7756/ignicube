@@ -16,7 +16,7 @@ Cypress._.times(1, () => {
         })
         context('Context Name', () => {
             // Independant testcase
-            it('C1: TestCase Name', () => {
+            it('C10: TestCase Name', () => {
                 pages.pageActions.verifyDefaultSccanerio()
             })
 
