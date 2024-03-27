@@ -15,8 +15,8 @@ Cypress._.times(1, () => {
             cy.visit(Cypress.env('demoURL'))
         })
         context('Context Name', () => {
+            // Independant testcase
             it('C1: TestCase Name', () => {
-                // Independant testcase
                 pages.pageActions.verifyDefaultSccanerio()
             })
 
