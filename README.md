@@ -34,7 +34,7 @@ Keep in mind, `my-cypress` name of your project folder name but you can update w
 npx git@github.com:Ignicube/CypressCookieCutter.git my-cypress
 ```
 
-## Install dependencies</br>
+## 2.1 Install dependencies</br>
 
 First, move into folder.
 
@@ -50,7 +50,7 @@ npm install
 
 ```
 
-## Create a new project
+## 2.2 Create a new project
 
 `project` refers to your project (name).
 
