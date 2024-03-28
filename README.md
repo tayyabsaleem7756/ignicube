@@ -3,7 +3,7 @@
 </div>
 
 </br>
-![alt company logo](Logo-1.png)
+
 ## Prerequisites
 
 Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
@@ -29,7 +29,7 @@ npx git@github.com:Ignicube/CypressCookieCutter.git my-cypress
 
 ## Install dependencies</br>
 
-First, move into project folder.
+First, move into folder.
 
 ```sh
 cd my-cypress
@@ -45,7 +45,7 @@ npm install
 
 ## Create a new project
 
-`project` refers to your project(name).
+`project` refers to your project (name).
 
 ```sh
 npm run add-project
@@ -109,7 +109,7 @@ A(it block) ---->D[Test Result]
 
 ### General actions
 
-There are numerous predefined action's accessible, by utilizing these action's your code will be rapid and consistent. Some examples are listed below
+There are numerous predefined action's(e.g. input, api request, drag & drop) accessible, by utilizing these action's your code will be rapid and consistent. Some examples are listed below
 
 ```js
 const login = () => {
@@ -152,6 +152,10 @@ const canvasDragandDropUsingXpath = (value, x, y) => {
     })
     .trigger('mouseup')
 }
+.
+.
+.
+
 const generalActions = {
   login,
   clickButtonUsingLabel,
