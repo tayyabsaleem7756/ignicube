@@ -1,5 +1,5 @@
-<h1 >Good to see you in cypress-testrail-boilerplate</h1>
-<div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this boilerplate you and your group can focus more on coding, and less stress around setup. This boilerplate is full of valuable plugins as of now designed, and much more! Great good fortune!
+<h1 >Good to see you in Cyppress Cookie Cutter</h1>
+<div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
 </br>
@@ -26,7 +26,7 @@ npm install -g npm
 Keep in mind, `my-application` name of your project but you can update while cloning this repository
 
 ```sh
-npx git@github.com:tayyabsaleem7756/igni.git my-application
+npx git@github.com:Ignicube/CypressCookieCutter.git my-cypress
 ```
 
 ## Install dependencies</br>
@@ -34,7 +34,7 @@ npx git@github.com:tayyabsaleem7756/igni.git my-application
 First, move into project folder.
 
 ```sh
-cd my-application
+cd my-cypress
 
 ```
 
