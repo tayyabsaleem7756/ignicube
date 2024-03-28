@@ -3,7 +3,7 @@
 </div>
 
 </br>
-![alt text](<Logo.png>)
+![alt company logo](Logo-1.png)
 ## Prerequisites
 
 Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
