@@ -154,8 +154,7 @@ const canvasDragandDropUsingXpath = (value, x, y) => {
 }
 .
 .
-.
-
+}
 const generalActions = {
   login,
   clickButtonUsingLabel,
