@@ -1,5 +1,5 @@
 ---
-to: cypress/core/pageObject/fixtures.js
+to: cypress/core/pageObject/fixtures.json
 force: true
 ---
 // Place fixtures for this project
