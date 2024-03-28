@@ -21,7 +21,7 @@ npm install -g npm
 
 ## Setting up your project with few commands
 
-Keep in mind, `my-application` name of your project but you can update while cloning this repository
+Keep in mind, `my-cypress` name of your project folder name but you can update while cloning this repository
 
 ```sh
 npx git@github.com:Ignicube/CypressCookieCutter.git my-cypress
