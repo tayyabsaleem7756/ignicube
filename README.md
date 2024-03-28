@@ -4,22 +4,42 @@
 
 </br>
 
+## Prerequisites to Install Cypress
+
+Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
+
+### Installing Node.js
+
+You can use the below link to install Node.js. Then click the Windows installer .msi file for installation. https://nodejs.org/en/download
+
+Hopefully, npm installed with Node.js there is only need to update NPM using following command
+
+```sh
+npm install -g npm
+
+```
+
 ## Setting up your project with few commands
 
 ### Installation Guide
 
 Keep in mind, `my-application` name of your project but you can update while cloning this repository
+
 ```sh
 npx git@github.com:tayyabsaleem7756/igni.git my-application
 ```
 
 ## Install dependencies</br>
+
 First, move into project folder.
+
 ```sh
 cd my-application
 
 ```
+
 npm(node package manager) will automatically install all dependencies
+
 ```sh
 npm install
 
@@ -35,16 +55,14 @@ npm run add-project
 
 This command will prompt you for your:
 
-- **prodject** name
-- **baseUrl** (e.g. www.mytestdomain.com)
-
-The third confirmation is for `testrail configuration` if you want to configure so type y, 
-- **Do you want configure testrail?'** (y/N)
+**Project name?** name
+**What is the baseUrl for this project? e.g(www.mydomain.com)**
+**Do you want configure testrail?'** (y/N)
+The third confirmation is for `testrail configuration` if you want to configure so type y,
 
 ## Setup almost Done !
 
-
-The command from above would create the following structure and inject new scripts in package.json. Rest of cypress project will remain as it is 
+The command from above would create the following structure and inject new scripts in package.json. Rest of cypress project will remain as it is
 
 ```
 - core/pageObject
@@ -66,88 +84,89 @@ The command from above would create the following structure and inject new scrip
 - cypress.env.json
 - cypress.config.js
 ```
+
 This file structure explains below.
 
-| file structure     |  description                                              |
-| ------------------ |  -------------------------------------------------------- |
-| `core/ pageObject` |   contains `objects modal` folder and file                |
-| `actions/`         |   contains `action's` on page (e.g. verify, add, edit)    |
-| `elements/`        |   contains `element's` on page                            |
-| `labels/`          |   contains `label's` for elements                         |
-| `elements.js`      |   cobined `element's` of system will export in this file  |
-| `fixture.js`       |   cobined `element's` of system will export in this file  |
-| `labels.js`        |   cobined `label's` of system will export in this file    |
-| `pages.js`         |   cobined `action's` of system will export in this file   |
+| file structure     | description                                            |
+| ------------------ | ------------------------------------------------------ |
+| `core/ pageObject` | contains `objects modal` folder and file               |
+| `actions/`         | contains `action's` on page (e.g. verify, add, edit)   |
+| `elements/`        | contains `element's` on page                           |
+| `labels/`          | contains `label's` for elements                        |
+| `elements.js`      | cobined `element's` of system will export in this file |
+| `fixture.js`       | cobined `element's` of system will export in this file |
+| `labels.js`        | cobined `label's` of system will export in this file   |
+| `pages.js`         | cobined `action's` of system will export in this file  |
 
-Best practice: create `separate files for each page/ section`  e.g. actions, elements, labels
+Best practice: create `separate files for each page/ section` e.g. actions, elements, labels
 
 Here may be a `straightforward stream` that how files intreract with eachother:
 
 ```mermaid
 graph LR
-A(it block) ---->B(action's) ---->C(elements's/ label's/ fixture's) 
+A(it block) ---->B(action's) ---->C(elements's/ label's/ fixture's)
 C(elements's/ label's/ fixture's) ---->B(action's) ---->A(it block)
 A(it block) ---->D[Test Result]
 ```
 
-### General actions 
+### General actions
 
 There are numerous predefined actions's accessible, by utilizing these action's your code will be rapid and consistant. Some example are listed below
 
 ```js
 const login = () => {
-    return cy.adminLogin(Cypress.env('username'), Cypress.env('password'))
+  return cy.adminLogin(Cypress.env('username'), Cypress.env('password'))
 }
 const clickButtonUsingLabel = (label) => {
-    return cy.contains(label).should('be.visible').click({
-        force: true
-    })
+  return cy.contains(label).should('be.visible').click({
+    force: true,
+  })
 }
 const clickButtonUsingLocator = (locator) => {
-    return cy.get(locator).should('be.visible').click({
-        force: true
-    })
+  return cy.get(locator).should('be.visible').click({
+    force: true,
+  })
 }
 const typeInDropdownInput = (dropdown_locator, text) => {
-    return cy.get(dropdown_locator).click().type(`${text}{enter}`, {
-        delay: 100
-    })
+  return cy.get(dropdown_locator).click().type(`${text}{enter}`, {
+    delay: 100,
+  })
 }
 const dragandDropUsingXpath = (value, value2) => {
-    const dataTransfer = new DataTransfer();
-    cy.xpath(value).trigger('dragstart', {
-        dataTransfer
-    });
+  const dataTransfer = new DataTransfer()
+  cy.xpath(value).trigger('dragstart', {
+    dataTransfer,
+  })
 
-    cy.get(value2).trigger('drop', {
-        dataTransfer
-    });
+  cy.get(value2).trigger('drop', {
+    dataTransfer,
+  })
 }
 const clickButtonUsingXpath = (value) => {
-    cy.xpath(value).click()
+  cy.xpath(value).click()
 }
 const canvasDragandDropUsingXpath = (value, x, y) => {
-    cy.xpath(value)
-        .trigger('mousedown').trigger("mousemove", {
-            clientX: x,
-            clientY: y
-        })
-        .trigger("mouseup")
+  cy.xpath(value)
+    .trigger('mousedown')
+    .trigger('mousemove', {
+      clientX: x,
+      clientY: y,
+    })
+    .trigger('mouseup')
 }
 const generalActions = {
-
-    login,
-    clickButtonUsingLabel,
-    clickButtonUsingLocator,
-    typeInDropdownInput,
-    clickButtonUsingXpath,
-    canvasDragandDropUsingXpath,
-    dragandDropUsingXpath,
+  login,
+  clickButtonUsingLabel,
+  clickButtonUsingLocator,
+  typeInDropdownInput,
+  clickButtonUsingXpath,
+  canvasDragandDropUsingXpath,
+  dragandDropUsingXpath,
 }
 
 export default generalActions
-
 ```
+
 Usage:
 
 ```js
@@ -169,7 +188,7 @@ Preview
 ```json
 {
   "staging": {
-    "baseUrl": "https://example.com",
+    "baseUrl": "https://example.com"
   },
   "release": {
     "baseUrl": "https://example.com"
@@ -218,7 +237,7 @@ Preview
       "email": "test@cypress_template_test.com",
       "password": "user password"
     }
-  },
+  }
 }
 ```
 
@@ -234,37 +253,39 @@ describe('Should visit admin', () => {
   })
 })
 ```
+
 <h1 >Checkout a few plugins recorded underneath</h1>
 <div >Plugins empower you to tap into, adjust, or expand the inside behavior of Cypress, some plugins are already enabled</div>
 
 ## Cypress Testrail Reporting-Enbeded Plugin
 
-* If you run multiple spec (test) files that are part of the same suite, the test results are combined under a single test run.
-* Results are reported immediately after single test execution (real-time reporting)
-* Test run would be closed after last spec(test) file has been finished
-* Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
-* Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
-* Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes) 
-</br>Note: cypress retry logic must be enabled for this feature `retry logic is enabled in below configuration`
+- If you run multiple spec (test) files that are part of the same suite, the test results are combined under a single test run.
+- Results are reported immediately after single test execution (real-time reporting)
+- Test run would be closed after last spec(test) file has been finished
+- Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
+- Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
+- Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes)
+  </br>Note: cypress retry logic must be enabled for this feature `retry logic is enabled in below configuration`
 
 Preview: `cypress.env.json`
+
 ```json
 {
-    "testrail": {
-        "domain": "my-company.testrail.io",
-        "username": "myUser",
-        "password": "myPwd",
-        "projectId": "P2", 
-        "milestoneId": "9", 
-        "suiteId": "S3",
-        "runName": "Cypress Run", 
-        "closeRun": false,
-        "screenshots": true 
-    },
-      "retries": {
-        "runMode": 1,
-        "openMode": 0
-    }
+  "testrail": {
+    "domain": "my-company.testrail.io",
+    "username": "myUser",
+    "password": "myPwd",
+    "projectId": "P2",
+    "milestoneId": "9",
+    "suiteId": "S3",
+    "runName": "Cypress Run",
+    "closeRun": false,
+    "screenshots": true
+  },
+  "retries": {
+    "runMode": 1,
+    "openMode": 0
+  }
 }
 ```
 
@@ -287,18 +308,19 @@ it("Can authenticate a valid userC2", ...
 Presently, let's see how we are able really test something. Uncovered command has signature like
 
 Drag-n-drop component, this function is already available in general action
+
 ```js
 const uploadFileUsingLocatorDandD = (locator, path) => {
-    return cy.get(locator).attachFile(path, {
-        action: 'drag-drop'
-    })
+  return cy.get(locator).attachFile(path, {
+    action: 'drag-drop',
+  })
 }
 ```
 
 Attaching multiple files
+
 ```js
-cy.get('[data-cy="file-input"]')
-  .attachFile(['myfixture.json', 'myfixture.json']);
+cy.get('[data-cy="file-input"]').attachFile(['myfixture.json', 'myfixture.json'])
 ```
 
 ## Brief

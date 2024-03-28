@@ -3,6 +3,7 @@ import 'cypress-iframe'
 import '@shelex/cypress-allure-plugin';
 import 'cypress-plugin-api';
 import 'cypress-plugin-steps';
+import 'cypress-file-upload';
 
 // Hygen - ScriptsImport - Do not remove this comment
 
