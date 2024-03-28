@@ -1,4 +1,4 @@
-<h1 >Good to see you in Cyppress Cookie Cutter</h1>
+<h1 >Good to see you in CypressCookieCutter</h1>
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 
@@ -54,9 +54,9 @@ npm run add-project
 This command will prompt you for your:
 
 **Project name?** </br>
-**What is the baseUrl for this project? e.g(www.mydomain.com)** </br>
-**Do you want configure testrail?'** (y/N) </br>
-The third confirmation is for `testrail configuration` if you want to configure so type y,
+**What is the baseUrl for this project? e.g. (www.mydomain.com)** </br>
+**Do you want configure TestRail?'** (y/N) </br>
+The third confirmation is for `TestRail configuration` if you want to configure so type y,
 
 ## Setup almost Done !
 
@@ -85,20 +85,20 @@ The command from above would create the following structure and inject new scrip
 
 This file structure explains below.
 
-| file structure     | description                                            |
-| ------------------ | ------------------------------------------------------ |
-| `core/ pageObject` | contains `objects modal` folder and file               |
-| `actions/`         | contains `action's` on page (e.g. verify, add, edit)   |
-| `elements/`        | contains `element's` on page                           |
-| `labels/`          | contains `label's` for elements                        |
-| `elements.js`      | cobined `element's` of system will export in this file |
-| `fixture.js`       | cobined `element's` of system will export in this file |
-| `labels.js`        | cobined `label's` of system will export in this file   |
-| `pages.js`         | cobined `action's` of system will export in this file  |
+| file structure     | description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `core/ pageObject` | contains `objects modal` folder and file                |
+| `actions/`         | contains `action's` on page (e.g. verify, add, edit)    |
+| `elements/`        | contains `element's` on page                            |
+| `labels/`          | contains `label's` for elements                         |
+| `elements.js`      | combined `element's` of system will export in this file |
+| `fixture.js`       | combined `element's` of system will export in this file |
+| `labels.js`        | combined `label's` of system will export in this file   |
+| `pages.js`         | combined `action's` of system will export in this file  |
 
 Best practice: create `separate files for each page/ section` e.g. actions, elements, labels
 
-Here may be a `straightforward stream` that how files intreract with eachother:
+Here is high level flow that how code structure intract with eah other
 
 ```mermaid
 graph LR
@@ -109,7 +109,7 @@ A(it block) ---->D[Test Result]
 
 ### General actions
 
-There are numerous predefined actions's accessible, by utilizing these action's your code will be rapid and consistant. Some example are listed below
+There are numerous predefined action's accessible, by utilizing these action's your code will be rapid and consistent. Some examples are listed below
 
 ```js
 const login = () => {
@@ -253,15 +253,15 @@ describe('Should visit admin', () => {
 ```
 
 <h1 >Checkout a few plugins recorded underneath</h1>
-<div >Plugins empower you to tap into, adjust, or expand the inside behavior of Cypress, some plugins are already enabled</div>
+<div >Plugins empower you to tap into, adjust, or expand the inside behaviour of Cypress, some plugins are already enabled</div>
 
-## Cypress Testrail Reporting-Enbeded Plugin
+## Cypress Testtrail Reporting-Embedded Plugin
 
 - If you run multiple spec (test) files that are part of the same suite, the test results are combined under a single test run.
 - Results are reported immediately after single test execution (real-time reporting)
 - Test run would be closed after last spec(test) file has been finished
 - Possibility to upload screenshots for failed and retried test cases - optional (allowFailedScreenshotUpload: true)
-- Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as testRailSuiteId=1)
+- Multi suite project support (set suiteId=1 in cypress.env.json or set it as a part of runtime environment variables as TestRailSuiteId=1)
 - Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes)
   </br>Note: cypress retry logic must be enabled for this feature `retry logic is enabled in below configuration`
 
@@ -269,8 +269,8 @@ Preview: `cypress.env.json`
 
 ```json
 {
-  "testrail": {
-    "domain": "my-company.testrail.io",
+  "TestRail": {
+    "domain": "my-company.TestRail.io",
     "username": "myUser",
     "password": "myPwd",
     "projectId": "P2",
@@ -301,7 +301,7 @@ it("C1Can authenticate a valid user", ...
 it("Can authenticate a valid userC2", ...
 ```
 
-## Cypress File Upload-Enbeded Plugin
+## Cypress File Upload-Embedded Plugin
 
 Presently, let's see how we are able really test something. Uncovered command has signature like
 
