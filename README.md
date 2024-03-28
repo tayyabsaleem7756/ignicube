@@ -19,6 +19,13 @@ npm install -g npm
 
 ```
 
+Verify Node.js and npm installed perfactly
+
+```sh
+node -v
+npm -v
+```
+
 ## Setting up your project with few commands
 
 Keep in mind, `my-cypress` name of your project folder name but you can update while cloning this repository
