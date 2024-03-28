@@ -55,9 +55,9 @@ npm run add-project
 
 This command will prompt you for your:
 
-**Project name?** name
-**What is the baseUrl for this project? e.g(www.mydomain.com)**
-**Do you want configure testrail?'** (y/N)
+**Project name?** </br>
+**What is the baseUrl for this project? e.g(www.mydomain.com)** </br>
+**Do you want configure testrail?'** (y/N) </br>
 The third confirmation is for `testrail configuration` if you want to configure so type y,
 
 ## Setup almost Done !
