@@ -4,11 +4,11 @@
 
 </br>
 
-## Prerequisites
+## 1. Prerequisites
 
 Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
 
-### Installing Node.js
+### 1.1 Installing Node.js
 
 You can use the below link to install Node.js. Then click the Windows installer .msi file for installation. https://nodejs.org/en/download
 
@@ -19,14 +19,14 @@ npm install -g npm
 
 ```
 
-Verify Node.js and npm installed perfactly
+Verify Node.js and npm installed perfactly. If system propmt version then you are good to go to next step
 
 ```sh
 node -v
 npm -v
 ```
 
-## Setting up your project with few commands
+## 2. Setting up your project with few commands
 
 Keep in mind, `my-cypress` name of your project folder name but you can update while cloning this repository
 
