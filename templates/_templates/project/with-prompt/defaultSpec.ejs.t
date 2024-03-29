@@ -12,12 +12,11 @@ Cypress._.times(1, () => {
     }, () => {
         before(() => {
             // Will run before testcase execution
-            cy.visit(Cypress.env('demoURL'))
+            cy.visit(Cypress.env('baseUrl'))
         })
         context('Context Name', () => {
             // Independant testcase
             it('C10: TestCase Name', () => {
-                pages.pageActions.verifyDefaultSccanerio()
                 pages.pageActions.verifyPageURL()
             })
         after(() => {
