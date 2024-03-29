@@ -18,8 +18,8 @@ Cypress._.times(1, () => {
             // Independant testcase
             it('C10: TestCase Name', () => {
                 pages.pageActions.verifyDefaultSccanerio()
+                pages.pageActions.verifyPageURL()
             })
-
         after(() => {
             // Will run after testcase execution
         })

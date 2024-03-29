@@ -17,9 +17,15 @@ const verifyDefaultSccanerio = () => {
     pages.generalActions.clickButtonUsingLabel(labels.pageLabels.googleSearchLabel)
 }
 
+const verifyPageURL = () => {
+
+    pages.generalActions.verifyUrl((Cypress.env('baseUrl')))
+}
+
 const pageActions = {
 
     verifyDefaultSccanerio,
+    verifyPageURL
 
 }
 
