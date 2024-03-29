@@ -19,7 +19,7 @@ npm install -g npm
 
 ```
 
-Verify Node.js and npm installed perfactly. If system propmt version then you are good to go to next step
+Verify Node.js and npm installed perfectly. If system prompt version then you are good to go to next step
 
 ```sh
 node -v
@@ -104,7 +104,7 @@ This file structure explains below.
 
 Best practice: create `separate files for each page/ section` e.g. actions, elements, labels
 
-Here is high level flow that how code structure intract with eah other
+Here is high level flow that how code structure interact with each other
 
 ```mermaid
 graph LR
