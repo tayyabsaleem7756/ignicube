@@ -3,7 +3,7 @@
 </div>
 [alt text](FB_IMG_1635829530739.jpg)
 </br>
-
+![Logo-1](https://github.com/tayyabsaleem7756/ignicube/assets/71561802/48afde6c-294e-4851-af9e-7d467744d1f8)
 ## Step 1. Prerequisites
 
 Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
