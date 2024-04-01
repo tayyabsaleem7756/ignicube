@@ -2,7 +2,7 @@
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
 ![mt lo](Logo.png/image.png)
-![alt text](Logo-1.png)
+![sample text here](Logo-1.png)
 </br>
 
 ## Step 1. Prerequisites
