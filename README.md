@@ -274,7 +274,7 @@ describe('Should visit admin', () => {
 - Reporting retest status of a test cases - handy in terms of marking tests as flaky (test is reported with retest status for the first try and after second try it passes)
   </br>Note: cypress retry logic must be enabled for this feature `retry logic is enabled in below configuration`
 
-Preview: `cypress.env.json`
+Preview: cypress.env.json
 
 ```json
 {
