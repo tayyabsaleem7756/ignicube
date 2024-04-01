@@ -4,7 +4,7 @@
 
 </br>
 <a href="">
-  <img alt="Cypress" src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" target="_blank" />
+  <img alt="Company Logo" src="https://github.com/tayyabsaleem7756/ignicube/assets/71561802/b6b88ed9-8489-4e97-8a51-a696d841bad1" target="_blank" />
 </a>
 ## Step 1. Prerequisites
 
