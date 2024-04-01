@@ -1,6 +1,6 @@
 <h1 >Good to see you in CypressCookieCutter</h1>
 
-![[alt](https://https://www.ignicube.com/) text](Logo.png)
+![[alt](https://www.ignicube.com/) text](Logo.png)
 
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
