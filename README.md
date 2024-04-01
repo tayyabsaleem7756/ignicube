@@ -1,9 +1,11 @@
 <h1 >Good to see you in CypressCookieCutter</h1>
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
-[alt text](FB_IMG_1635829530739.jpg)
+
 </br>
-![Logo-1](https://github.com/tayyabsaleem7756/ignicube/assets/71561802/48afde6c-294e-4851-af9e-7d467744d1f8)
+<a href="">
+  <img alt="Cypress" src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" target="_blank" />
+</a>
 ## Step 1. Prerequisites
 
 Node.js must be installed before installing Cypress. NodeJS is a runtime environment that's helps to create server-side JavaScript applications.
