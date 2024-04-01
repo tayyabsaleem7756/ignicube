@@ -1,6 +1,4 @@
-<h1 >Good to see you in CypressCookieCutter <a href="https://www.ignicube.com/">
-  <img alt="Company Logo" src="https://github.com/tayyabsaleem7756/ignicube/assets/71561802/052d41a9-b8cf-466a-a10f-37cf766468fa" target="_blank" />
-</a></h1>
+<h1 >Good to see you in CypressCookieCutter</h1>
 
 ![alt text](Logo.png)
 
