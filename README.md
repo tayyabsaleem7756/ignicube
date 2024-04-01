@@ -1,5 +1,6 @@
 <h1 >Good to see you in CypressCookieCutter</h1> <a href="https://www.ignicube.com/">
-  <img alt="Company Logo" src="https://github.com/tayyabsaleem7756/ignicube/assets/71561802/b6b88ed9-8489-4e97-8a51-a696d841bad1" target="_blank" />
+  <img alt="Company Logo" src="https://github.com/tayyabsaleem7756/ignicube/assets/71561802/b6b88ed9-8489-4e97-8a51-a696d841bad1" target="_blank" width:200px;
+            height:300px; />
 </a>
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
