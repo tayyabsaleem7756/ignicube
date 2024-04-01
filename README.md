@@ -1,7 +1,7 @@
 <h1 >Good to see you in CypressCookieCutter</h1>
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
-
+![mt lo](Logo.png/image.png)
 </br>
 
 ## Step 1. Prerequisites
@@ -19,7 +19,7 @@ npm install -g npm
 
 ```
 
-Verify Node.js and npm installed perfectly. If system prompt version then you are good to go to next step
+Verify Node.js and npm installed perfectly. If system prompt version, then you are good to go to next step
 
 ```sh
 node -v
@@ -43,7 +43,7 @@ cd my-cypress
 
 ```
 
-npm(node package manager) will automatically install all dependencies
+npm (node package manager) will automatically install all dependencies
 
 ```sh
 npm install
@@ -64,7 +64,7 @@ Project name? </br>
 What is the baseUrl for this project? e.g. (www.mydomain.com) </br>
 Do you want configure TestRail? (y/N) yes will create test `TestRail configuration`</br>
 
-## Setup almost Done !
+## Setup almost Done!
 
 The command from above would create the following structure and inject new scripts in package.json. Rest of cypress project will remain as it is
 
@@ -115,7 +115,7 @@ A(it block) ---->D[Test Result]
 
 ### General actions
 
-There are numerous predefined action's(e.g. input, api request, drag & drop) accessible, by utilizing these action's your code will be rapid and consistent. Some examples are listed below
+There are numerous predefined action's (e.g. input, Api request, drag & drop) accessible, by utilizing these action's your code will be rapid and consistent. Some examples are listed below
 
 ```js
 const login = () => {
