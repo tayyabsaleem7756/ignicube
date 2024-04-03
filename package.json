@@ -11,7 +11,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tayyabsaleem7756/igni.git"
+    "url": "git+https://github.com/CypressCookieCutter.git",
+    "ssh": "git@github.com:Ignicube/CypressCookieCutter.git"
   },
   "keywords": [
     "cypress",
@@ -20,13 +21,14 @@
     "boilerplate",
     "template"
   ],
-  "author": "Optimum QA <bussines.tayyabsaleem7756@gmail.com>",
-  "license": "MIT",
+  "author": "Ignicube QA Dept <services@ignicube.com>",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/tayyabsaleem7756/igni/issues"
+    "url": "https://github.com/Ignicube/CypressCookieCutter/issues"
   },
-  "homepage": "https://github.com/tayyabsaleem7756/igni#readme",
+  "homepage": "https://github.com/Ignicube/CypressCookieCutter#readme",
   "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2",
     "semantic-release": "21.0.6"
   },
   "scripts": {
@@ -227,8 +229,8 @@
     "split": "^1.0.1",
     "split2": "^3.2.2",
     "stream-combiner2": "^1.1.1",
-    "string-width": "^4.2.3",
     "string_decoder": "^1.1.1",
+    "string-width": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "strip-bom": "^3.0.0",
     "strip-final-newline": "^3.0.0",
