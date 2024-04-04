@@ -11,7 +11,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CypressCookieCutter.git"
+    "url": "git+https://github.com/CypressCookieCutter.git",
+    "ssh": "git@github.com:Ignicube/CypressCookieCutter.git"
   },
   "keywords": [
     "cypress",
@@ -27,7 +28,7 @@
   },
   "homepage": "https://github.com/Ignicube/CypressCookieCutter#readme",
   "devDependencies": {
-    "cypress-xpath": "^2.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "semantic-release": "21.0.6"
   },
   "scripts": {
