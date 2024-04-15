@@ -414,7 +414,7 @@ module.exports = defineConfig({
 
 Verify downloaded plugin makes a difference to confirm downloaded records, not matter what is extention of file.
 
-Usage:
+In your test, you'll utilize it like this
 
 ```js
 cy.verifyDownload('image.png')
