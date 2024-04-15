@@ -24,15 +24,32 @@ Cypress._.times(1, () => {
             it('xpath usage', () => {
                 cy.xpath('//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[4]/center[1]/input[1]').should('be.visible')
             })
-            it('Verify Download Demo', () => {
-                pages.pageActions.verifyDownloads()
+
+            after(() => {
+                // Will run after testcase execution
             })
-        after(() => {
-            // Will run after testcase execution
-        })
         })
     })
 })
 
+Cypress._.times(1, () => {
+    describe('Test Suit Name', {
+        testIsolation: false
+    }, () => {
+        before(() => {
+            // Will run before testcase execution
+            cy.visit(Cypress.env('downloadDemoSite'))
+        })
+        context('Context Name', () => {
+            it('Verify Download Demo', () => {
+                pages.pageActions.verifyDownloads()
+            })
+
+            after(() => {
+                // Will run after testcase execution
+            })
+        })
+    })
+})
 
 
