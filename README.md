@@ -412,7 +412,7 @@ module.exports = defineConfig({
 
 ## Verify Download-Embedded Plugin
 
-Verify downloaded plugin makes a difference to confirm downloaded records, not matter what is extention of file.
+Verify downloaded plugin makes a difference to confirm downloaded records, not matter what is extension of file. By using these variations of the `cy.verifyDownload` command with different options, you can effectively confirm and validate downloaded records regardless of the file extension or partial filename.
 
 In your test, you'll utilize it like this
 
