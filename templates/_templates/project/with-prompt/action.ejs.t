@@ -22,6 +22,11 @@ const verifyPageURL = () => {
     pages.generalActions.verifyUrl((Cypress.env('baseUrl')))
 }
 
+const xpath = () => {
+
+    cy.xpath("//h2[contains(text(),'Downloads')]").should('be.visible')
+}
+
 const verifyDownloads = () => {
 
     cy.visit((Cypress.env('downloadDemoSite')))
@@ -33,6 +38,7 @@ const pageActions = {
 
     verifyDefaultSccanerio,
     verifyPageURL,
+    xpath,
     verifyDownloads
 
 }

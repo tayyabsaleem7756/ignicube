@@ -9,22 +9,18 @@ to: cypress/e2e/<%- project %>/default.cy.js
 import * as pages from '../../core/pageObject/pages'
 
 Cypress._.times(1, () => {
-    describe('Test Suit Name', {
+    describe('Test Suit Name Here', {
         testIsolation: false
     }, () => {
         before(() => {
             // Will run before testcase execution
             cy.visit(Cypress.env('baseUrl'))
         })
-        context('Context Name', () => {
+        context('Context Name Here', () => {
             // Independant testcase
-            it('C10: TestCase Name', () => {
+            it('C10: TestCase Name Here', () => {
                 pages.pageActions.verifyPageURL()
             })
-            it('xpath usage', () => {
-                cy.xpath('//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[4]/center[1]/input[1]').should('be.visible')
-            })
-
             after(() => {
                 // Will run after testcase execution
             })
@@ -33,22 +29,19 @@ Cypress._.times(1, () => {
 })
 
 Cypress._.times(1, () => {
-    describe('Test Suit Name', {
+    describe('Plugins Demo', {
         testIsolation: false
     }, () => {
         before(() => {
-            // Will run before testcase execution
             cy.visit(Cypress.env('downloadDemoSite'))
         })
-        context('Context Name', () => {
-            it('Verify Download Demo', () => {
-                pages.pageActions.verifyDownloads()
-            })
-
-            after(() => {
-                // Will run after testcase execution
-            })
+        it('Xpath', () => {
+            pages.pageActions.xpath()
         })
+        it('Verify Download', () => {
+            pages.pageActions.verifyDownloads()
+        })
+
     })
 })
 
