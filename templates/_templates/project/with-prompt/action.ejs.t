@@ -22,10 +22,18 @@ const verifyPageURL = () => {
     pages.generalActions.verifyUrl((Cypress.env('baseUrl')))
 }
 
+const verifyDownloads = () => {
+
+    cy.visit((Cypress.env('downloadDemoSite')))
+    pages.generalActions.clickButtonUsingLocator(elements.pageElements.downloadLinkDemo)
+    cy.verifyDownload('Download.zip')
+}
+
 const pageActions = {
 
     verifyDefaultSccanerio,
-    verifyPageURL
+    verifyPageURL,
+    verifyDownloads
 
 }
 
