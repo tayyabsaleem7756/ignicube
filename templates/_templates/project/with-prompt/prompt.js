@@ -15,7 +15,7 @@ module.exports = [{
   },
   {
     type: 'confirm',
-    name: 'configure github',
+    name: 'github',
     message: 'Do you want integrate github action?',
   },
   // {

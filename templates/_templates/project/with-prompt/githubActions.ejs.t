@@ -1,5 +1,5 @@
 ---
-to: "<%= configure github ? '.github/workflows/main.yml' : null %>"
+to: "<%= github ? '.github/workflows/main.yml' : null %>"
 ---
 
 name: Cypress Tests
