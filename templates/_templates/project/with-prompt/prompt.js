@@ -13,6 +13,11 @@ module.exports = [{
     name: 'configure',
     message: 'Do you want configure testrail?',
   },
+  {
+    type: 'confirm',
+    name: 'configure github',
+    message: 'Do you want integrate github action?',
+  },
   // {
   //   type: 'input',
   //   name: 'projectId',
