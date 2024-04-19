@@ -437,7 +437,7 @@ Once you type y and press enter than a file will make on root named `.github/wor
 This is very basic configuration of CI with cypress automation, you'll be able modify as per your necessities. This gitHub action will run cypress test on every [push]
 
 ```yaml
-name: Cypress Tests
+name: Cypress Tests on push
 on: [push]
 jobs:
   Cypress-Test:
@@ -451,6 +451,30 @@ jobs:
         with:
           command: npx cypress run
           browser: chrome
+```
+
+### Run daily triggers
+
+If you trigger your test run on specific or daily you'll include schedule run with time in yml file. And also you can change browser setting as below
+
+```yaml
+name: Cypress schedule tests
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '* * * * *'
+jobs:
+  Cypress-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v4
+
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
+        with:
+          command: npx cypress run
+          browser: electron
 ```
 
 ## Brief
