@@ -430,6 +430,29 @@ cy.verifyDownload('archive.zip', { timeout: 25000 })
 cy.verifyDownload('project.pdf', { timeout: 25000, interval: 600 })
 ```
 
+## CI with GitHub Actions-Embedded
+
+nce you run `npm run add-project` on over 2.2 steps than system will inquire for a confirmation, Do you want integrate github action?
+Once you type y and press enter than a file will make on root named .github/workflow/main.yml
+This is very basic configuration of CI with cypress automation, you'll be able modify as per your necessities. This gitHub action will run cypress test on every [push]
+
+```yaml
+name: Cypress Tests
+on: [push]
+jobs:
+  Cypress-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v4
+
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
+        with:
+          command: npx cypress run
+          browser: chrome
+```
+
 ## Brief
 
 No configuration needed with a clean, intuitive, and same project structure we keep everyone consistent across all projects.
