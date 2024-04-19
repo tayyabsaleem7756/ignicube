@@ -462,7 +462,7 @@ name: Cypress schedule tests
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '00 04 * * *' # run daily at 4:00 am
 jobs:
   Cypress-Test:
     runs-on: ubuntu-latest
