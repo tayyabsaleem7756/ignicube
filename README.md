@@ -432,7 +432,7 @@ cy.verifyDownload('project.pdf', { timeout: 25000, interval: 600 })
 
 ## CI with GitHub Actions-Embedded
 
-Once you run `npm run add-project` on over 2.2 steps than system will inquire for a confirmation,<br> Do you want integrate github action? **(y/N)** <br><br>
+Once you run `npm run add-project` on over 2.2 steps than system will inquire for a confirmation.<br><br> Do you want integrate github action? **(y/N)** <br>
 Once you type y and press enter than a file will make on root named `.github/workflow/main.yml`
 This is very basic configuration of CI with cypress automation, you'll be able modify as per your necessities. This gitHub action will run cypress test on every [push]
 
