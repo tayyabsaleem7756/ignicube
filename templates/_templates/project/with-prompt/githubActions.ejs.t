@@ -16,6 +16,3 @@ jobs:
         with:
           command: npx cypress run
           browser: chrome
-
-
-
