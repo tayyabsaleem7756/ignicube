@@ -2,7 +2,7 @@
 to: "<%= github ? '.github/workflows/main.yml' : null %>"
 ---
 
-name: Cypress Tests
+name: Cypress test (push)
 on: [push]
 jobs:
   Cypress-Test:
