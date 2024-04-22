@@ -430,7 +430,7 @@ cy.verifyDownload('archive.zip', { timeout: 25000 })
 cy.verifyDownload('project.pdf', { timeout: 25000, interval: 600 })
 ```
 
-## CI with GitHub Actions-Embedded![alt text](cygithublogo.png)
+## CI with GitHub Actions-Embedded![alt text](cygithublogo.png height="61" width="240" )
 
 Once you run `npm run add-project` on over 2.2 steps than system will inquire for a confirmation.<br><br> Do you want integrate github action? **(y/N)** <br>
 Once you type y and press enter than a file will make on root named `.github/workflow/main.yml`
