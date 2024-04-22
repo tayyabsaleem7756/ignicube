@@ -430,14 +430,14 @@ cy.verifyDownload('archive.zip', { timeout: 25000 })
 cy.verifyDownload('project.pdf', { timeout: 25000, interval: 600 })
 ```
 
-## CI with GitHub Actions-Embedded
+## CI with GitHub Actions-Embedded![alt text](cygithublogo.png)
 
 Once you run `npm run add-project` on over 2.2 steps than system will inquire for a confirmation.<br><br> Do you want integrate github action? **(y/N)** <br>
 Once you type y and press enter than a file will make on root named `.github/workflow/main.yml`
 This is very basic configuration of CI with cypress automation, you'll be able modify as per your necessities. This gitHub action will run cypress test on every [push]
 
 ```yaml
-name: Cypress Tests on push
+name: Cypress test (push)
 on: [push]
 jobs:
   Cypress-Test:
@@ -455,14 +455,14 @@ jobs:
 
 ### Run daily triggers
 
-If you trigger your test run on specific or daily you'll include schedule run with time in yml file. And also you can change browser setting as below
+If you want to trigger your test run on particular or day by day you'll incorporate plan run with time in yml record. Additionally you'll be able alter browser setting as underneath
 
 ```yaml
-name: Cypress schedule tests
+name: Cypress test (scheduled)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 04 * * *' # runs daily at 4:00 am
+    - cron: '00 04 * * *' # runs daily At 04:00 AM
 jobs:
   Cypress-Test:
     runs-on: ubuntu-latest
