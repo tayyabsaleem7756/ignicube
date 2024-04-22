@@ -1,5 +1,5 @@
 <h1 >Welcome to CypressCookieCutter
-<a href="https://www.ignicube.com/"><img src="https://github.com/Ignicube/CypressCookieCutter/assets/151735556/64a2cd94-24a5-4357-9df2-91eda9634f6a" height="61" width="235" ></a></h1>
+<a href="https://www.ignicube.com/"><img src="https://github.com/Ignicube/CypressCookieCutter/assets/151735556/64a2cd94-24a5-4357-9df2-91eda9634f6a" height="61" width="230" ></a></h1>
 
 <div >Rapidly create modern ventures, and start and begin coding quickly with an as of now pre-configured extend. Whereas utilizing this CypressCookieCutter you and your group can focus more on coding, and less stress around setup. This CypressCookieCutter is full of valuable plugins as of now designed, and much more! Great good fortune!
 </div>
