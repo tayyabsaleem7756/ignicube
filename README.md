@@ -455,7 +455,7 @@ jobs:
 
 ### Run daily triggers
 
-If you want to trigger your test run on particular or day by day you'll incorporate plan run with time in yml record. Additionally you'll be able alter browser setting as underneath
+If you want to trigger your test run on particular or day by day you'll incorporate plan run with time in main.yml or can add new file in workflow folder . Additionally you'll be able alter browser setting as underneath
 
 ```yaml
 name: Cypress test (scheduled)
