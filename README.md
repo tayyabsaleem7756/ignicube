@@ -517,6 +517,21 @@ Pass in an options object to change the default behavior of cy.waitUntil().
 | verbose            | string           | false              | If every single check result must be logged.                                                                           |
 | customCheckMessage | string           | undefined          | Like customMessage, but used for every single check. Useless if verbose is not set to true.                            |
 
+## Mobile Command/ Map-Embedded Plugin
+
+Cypress mobile command/ map plugin specifically designed to facilitate mobile testing by providing additional commands tailored for mobile interactions. This plugin extends Cypress with commands that simulate common mobile gestures and behaviors, making it easier to write comprehensive end-to-end tests for mobile applications.
+
+Some of the commands provided by cy-mobile-commands may include:
+
+| cy.mobileSwipe() | This command allows you to simulate swiping gestures on mobile devices, which are commonly used for navigation or scrolling within mobile applications.
+| cy.mobileTap() | Use this command to simulate tapping on elements in your mobile application, similar to how users interact with touchscreens.
+| cy.mobileScroll()| This command enables you to simulate scrolling behavior within your mobile application, which is useful for testing scrolling lists or dynamic content.
+| cy.mobilePinch()| Use this command to simulate pinch gestures, which are often used for zooming in or out on mobile devices.
+| cy.mobileRotate()| This command allows you to simulate device rotation, which is essential for testing how your application responds to changes in orientation.
+| cy.mobileDevice()| This command sets the viewport to emulate a specific mobile device, allowing you to test your application's responsiveness across various screen sizes and resolutions.
+| cy.mobileOrientation()| Use this command to set the orientation of the device viewport, allowing you to test how your application behaves in both portrait and landscape modes.
+| cy.mobileInput()| This command simulates typing text into input fields on mobile devices, helping you test forms and text entry functionalities.
+
 ## Brief
 
 No configuration needed with a clean, intuitive, and same project structure we keep everyone consistent across all projects.
