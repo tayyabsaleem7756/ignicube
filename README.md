@@ -532,6 +532,28 @@ Some of the commands provided by cy-mobile-commands may include:
 - `cy.mobileOrientation()` Use this command to set the orientation of the device viewport, allowing you to test how your application behaves in both portrait and landscape modes.
 - `cy.mobileInput()` This command simulates typing text into input fields on mobile devices, helping you test forms and text entry functionalities.
 
+Usage in independent test case:
+
+```js
+it('Page Swipe', () => {
+  cy.get('.slider').swipe('right', 'left')
+  cy.get('.slider').swipe('left', 'right')
+})
+it('Map', () => {
+  cy.get('.map').swipe(
+    { delay: 2000 },
+    [
+      [100, 200],
+      [65, 35],
+    ],
+    [
+      [140, 300],
+      [50, 500],
+    ],
+  )
+})
+```
+
 ## Brief
 
 No configuration needed with a clean, intuitive, and same project structure we keep everyone consistent across all projects.
