@@ -505,17 +505,17 @@ cy.waitUntil(() => cy.window().then((win) => win.foo === 'bar'), {
 
 Pass in an options object to change the default behavior of cy.waitUntil().
 
-| Option             | Type             | Default            | Description                                                                                                            |
-| ------------------ | ---------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| errorMsg           | string/ function | Timed out retrying | The error message to write. If it's a function, it will receive the last result and the options passed to cy.waitUntil |
-| timeout            | number           | 5000               | Time to wait for the checkFunction to return a truthy value before throwing an error.                                  |
-| interval           | number           | 200                | Time to wait between the checkFunction invocations.                                                                    |
-| description        | string           | waitUntil          | The name logged into the Cypress Test Runner.                                                                          |
-| logger             | function         | Cypress.log        | A custom logger in place of the default Cypress.log. It's useful just for debugging purposes.                          |
-| log                | boolean          | true               | Enable/disable logging.                                                                                                |
-| customMessage      | string           | undefined          | String logged after the options.description.                                                                           |
-| verbose            | string           | false              | If every single check result must be logged.                                                                           |
-| customCheckMessage | string           | undefined          | Like customMessage, but used for every single check. Useless if verbose is not set to true.                            |
+| Option             | Type             | Default            | Description                                                                                                              |
+| ------------------ | ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| errorMsg           | string/ function | Timed out retrying | The error message to write. If it's a function, it will receive the last result and the options passed to cy.waitUntil() |
+| timeout            | number           | 5000               | Time to wait for the checkFunction to return a truthy value before throwing an error.                                    |
+| interval           | number           | 200                | Time to wait between the checkFunction invocations.                                                                      |
+| description        | string           | waitUntil          | The name logged into the Cypress Test Runner.                                                                            |
+| logger             | function         | Cypress.log        | A custom logger in place of the default Cypress.log. It's useful just for debugging purposes.                            |
+| log                | boolean          | true               | Enable/disable logging.                                                                                                  |
+| customMessage      | string           | undefined          | String logged after the options.description.                                                                             |
+| verbose            | string           | false              | If every single check result must be logged.                                                                             |
+| customCheckMessage | string           | undefined          | Like customMessage, but used for every single check. Useless if verbose is not set to true.                              |
 
 ## Mobile Command/ Map-Embedded Plugin
 
@@ -523,14 +523,14 @@ Cypress mobile command/ map plugin specifically designed to facilitate mobile te
 
 Some of the commands provided by cy-mobile-commands may include:
 
-| cy.mobileSwipe() | This command allows you to simulate swiping gestures on mobile devices, which are commonly used for navigation or scrolling within mobile applications.
-| cy.mobileTap() | Use this command to simulate tapping on elements in your mobile application, similar to how users interact with touchscreens.
-| cy.mobileScroll()| This command enables you to simulate scrolling behavior within your mobile application, which is useful for testing scrolling lists or dynamic content.
-| cy.mobilePinch()| Use this command to simulate pinch gestures, which are often used for zooming in or out on mobile devices.
-| cy.mobileRotate()| This command allows you to simulate device rotation, which is essential for testing how your application responds to changes in orientation.
-| cy.mobileDevice()| This command sets the viewport to emulate a specific mobile device, allowing you to test your application's responsiveness across various screen sizes and resolutions.
-| cy.mobileOrientation()| Use this command to set the orientation of the device viewport, allowing you to test how your application behaves in both portrait and landscape modes.
-| cy.mobileInput()| This command simulates typing text into input fields on mobile devices, helping you test forms and text entry functionalities.
+- cy.mobileSwipe(): This command allows you to simulate swiping gestures on mobile devices, which are commonly used for navigation or scrolling within mobile applications.
+- cy.mobileTap(): Use this command to simulate tapping on elements in your mobile application, similar to how users interact with touchscreens.
+- cy.mobileScroll(): This command enables you to simulate scrolling behavior within your mobile application, which is useful for testing scrolling lists or dynamic content.
+- cy.mobilePinch(): Use this command to simulate pinch gestures, which are often used for zooming in or out on mobile devices.
+- cy.mobileRotate(): This command allows you to simulate device rotation, which is essential for testing how your application responds to changes in orientation.
+- cy.mobileDevice(): This command sets the viewport to emulate a specific mobile device, allowing you to test your application's responsiveness across various screen sizes and resolutions.
+- cy.mobileOrientation(): Use this command to set the orientation of the device viewport, allowing you to test how your application behaves in both portrait and landscape modes.
+- cy.mobileInput(): This command simulates typing text into input fields on mobile devices, helping you test forms and text entry functionalities.
 
 ## Brief
 
