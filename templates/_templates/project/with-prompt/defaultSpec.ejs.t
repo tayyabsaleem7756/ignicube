@@ -41,8 +41,11 @@ Cypress._.times(1, () => {
         it('Verify Download', () => {
             pages.pageActions.verifyDownloads()
         })
-         it('Wait Until', () => {
+        it('Wait Until', () => {
             pages.pageActions.waitUntil()
+        })
+        it('Cypress If', () => {
+            pages.pageActions.ifElse()
         })
 
     })
