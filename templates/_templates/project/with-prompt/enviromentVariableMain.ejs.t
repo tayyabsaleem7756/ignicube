@@ -1,5 +1,6 @@
 ---
 to: "<%= configure ? 'cypress.env.json' : null %>"
+inject: true
 ---
 
 {
