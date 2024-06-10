@@ -1,5 +1,6 @@
 ---
 to: cypress.env.json
+force: true
 ---
 
 {
