@@ -1,6 +1,5 @@
 ---
 to: cypress.env.json
-inject: true
 ---
 
 {
