@@ -1,7 +1,6 @@
 ---
 to: cypress.env.json
 inject: true
-after: scripts
 ---
 
 {
