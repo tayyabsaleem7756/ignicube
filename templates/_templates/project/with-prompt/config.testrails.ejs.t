@@ -12,6 +12,13 @@ const {
   verifyDownloadTasks
 } = require('cy-verify-downloads');
 
+const fs = require('fs');
+const pdf = require('pdf-parse');
+const path = require('path');
+const {
+  resolve
+} = require("dns/promises");
+
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   video: true,
@@ -35,6 +42,18 @@ module.exports = defineConfig({
       require('./cypress/plugins/index.js')(on, config)
       on('before:run', (details) => {
         /* code that needs to run before all specs */
+      })
+      on('task', {
+        readPdf(pdfPath) {
+          return new Promise((resolve) => {
+
+            const filePath = path.resolve(pdfPath)
+            const dataBuffer = fs.readFileSync(filePath)
+            pdf(dataBuffer).then(function (data) {
+              resolve(data);
+            })
+          })
+        }
       })
     },
     testIsolation: false,
