@@ -574,6 +574,39 @@ cy.contains('Accept cookies').if('visible').click().else().log('no cookie banner
 
 By default, the .if() command just checks the existence of the element returned by the cy.get command. You might use instead a different assertion, like close a dialog, callback function, combining assertion, multiple commands, within, finally, aliases and null values.
 
+## Cypress cucumber integration with CypressCookiesCutter
+
+Cypress Cucumber allows you to write test scenarios in Gherkin syntax, which is a plain language format. This makes the tests readable and understandable by non-technical stakeholders, such as business analysts and product managers. By integrating Cypress and Cucumber, you create a testing setup that is not only robust and reliable but also accessible to non-developers, leading to better collaboration and alignment with business goals.
+
+The configuration file is written in JavaScript. A Javascript file might be a tiny bit simpler, but essentially contains all the same parts. We are importing different packages and adding them into our setupNodeEvents() function.
+
+The specPatterns attribute tells Cypress that we want to be looking for .feature & .cy.js files in our e2e folder. This means that it will ignore all other formats and only use .feature & .cy.js files as our test.The purpose of the two specPatterns (.feature &.cy.js) is to enable developers to use the Cypress Cucumber framework or construct their own structure.
+
+addCucumberPreprocessorPlugin() function takes care of digesting these .feature files and converting them into Javascript. Since Cypress runs in the browser, we need to make sure that everything we run (whether it is .ts files, .jsx or other formats) will eventually get compiled into plain Javascript. This is what preprocessors do.
+
+The on("file:preprocessor") part takes care of combining the esbuild plugin with the cucumber plugin so they play nicely together.
+
+## Test Scenarios and Steps Definition
+
+Test scenarios step which is writing in Gherkin syntax. Let’s start by writing a simple test
+Create a new file cypress/e2e/openGoogle.feature and add the following content below
+
+```gherkin
+
+Feature: Open Google
+
+    Scenario: User opens the Google homepage
+
+        Given the user opens the google homepage
+
+        When the user navigates to the images button
+
+        Then the user click on search bar
+
+        And the URL of the page should be "https://www.google.com/imghp?hl=en&ogbl"
+
+```
+
 =======
 
 ## Brief
