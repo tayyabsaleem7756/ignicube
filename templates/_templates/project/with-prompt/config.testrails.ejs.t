@@ -12,13 +12,6 @@ const {
   verifyDownloadTasks
 } = require('cy-verify-downloads');
 
-const fs = require('fs');
-const pdf = require('pdf-parse');
-const path = require('path');
-const {
-  resolve
-} = require("dns/promises");
-
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   video: true,
@@ -43,18 +36,6 @@ module.exports = defineConfig({
       on('before:run', (details) => {
         /* code that needs to run before all specs */
       })
-      on('task', {
-        readPdf(pdfPath) {
-          return new Promise((resolve) => {
-
-            const filePath = path.resolve(pdfPath)
-            const dataBuffer = fs.readFileSync(filePath)
-            pdf(dataBuffer).then(function (data) {
-              resolve(data);
-            })
-          })
-        }
-      })
     },
     testIsolation: false,
   },
@@ -69,3 +50,16 @@ module.exports = defineConfig({
     },
   },
 });
+
+const cucumber = require('cypress-cucumber-preprocessor').default;
+
+module.exports = defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+      on('file:preprocessor', cucumber())
+    },
+    //specPattern: "cypress/e2e/**/*.feature",
+    specPattern: ['cypress/e2e/**/*.feature', 'cypress/e2e/**/*.cy.js'],
+  },
+})
