@@ -607,6 +607,25 @@ Feature: Open Google
 
 ```
 
+Now, we need to create step definitions for each step in the scenario. The easiest way to define our steps is to create a new file called openGoogle.js in the cypress/e2e folder, that may look something like this
+
+```js
+import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
+
+Given('User opens the google homepage', () => {
+  cy.visit('https://www.google.com/')
+})
+When('User navigates to the images button', () => {
+  cy.get('a.gb_y:contains("Images")').click()
+})
+Then('User click on search bar', () => {
+  cy.get('textarea[name="q"]').click()
+})
+And('The URL of the page should be {string}', (expectedUrl) => {
+  cy.url().should('eq', 'https://www.google.com/imghp?hl=en&ogbl')
+})
+```
+
 =======
 
 ## Brief
