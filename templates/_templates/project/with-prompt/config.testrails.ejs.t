@@ -46,7 +46,6 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
-      on('task', verifyDownloadTasks);
     },
   },
 });
@@ -58,6 +57,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on('file:preprocessor', cucumber())
+      on('task', verifyDownloadTasks);
     },
     //specPattern: "cypress/e2e/**/*.feature",
     specPattern: ['cypress/e2e/**/*.feature', 'cypress/e2e/**/*.cy.js'],

@@ -588,7 +588,7 @@ The on("file:preprocessor") part takes care of combining the esbuild plugin with
 
 ## Test Scenarios and Steps Definition
 
-Test scenarios step which is writing in Gherkin syntax. Let’s start by writing a simple test
+Test scenarios are the steps which are written in Gherkin syntax. Let’s start by writing a simple test
 Create a new file cypress/e2e/openGoogle.feature and add the following content below
 
 ```gherkin
