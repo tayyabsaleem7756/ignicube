@@ -624,8 +624,6 @@ And('The URL of the page should be {string}', (expectedUrl) => {
 })
 ```
 
-=======
-
 ## Brief
 
 No configuration needed with a clean, intuitive, and same project structure we keep everyone consistent across all projects.
