@@ -15,10 +15,10 @@ Given('User opens the google homepage', () => {
     cy.visit('https://www.google.com/');
 });
 When('User navigates to the images button', () => {
-    cy.get('a.gb_y:contains("Images")').click();
+    cy.get(':nth-child(2) > .gb_V').click();
 });
 Then('User click on search bar', () => {
-    cy.get(':nth-child(2) > .gb_V').click();
+    cy.get('textarea[name="q"]').click();
 });
 And('The URL of the page should be {string}', (expectedUrl) => {
     cy.url().should('eq', 'https://www.google.com/imghp?hl=en&ogbl');
