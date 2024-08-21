@@ -1,5 +1,5 @@
 ---
-to: cypress/e2e/<%- project %>/sampleFeature.feature
+to: cypress/e2e/<%- project %>/OpenGoogle.feature
 ---
 # This is default feature, you can add multiple features in this file or can create new feature files.
 

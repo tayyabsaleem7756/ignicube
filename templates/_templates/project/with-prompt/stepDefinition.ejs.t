@@ -1,5 +1,5 @@
 ---
-to: cypress/e2e/<%- project %>/sampleStepDefinition/sampleStepDefinition.js
+to: cypress/e2e/<%- project %>/OpenGoogle/OpenGoogle.js
 ---
 // This is default step definition, you can add multiple step definitions in this file or can create new step definitions.
 
@@ -18,7 +18,7 @@ When('User navigates to the images button', () => {
     cy.get('a.gb_y:contains("Images")').click();
 });
 Then('User click on search bar', () => {
-    cy.get('textarea[name="q"]').click();
+    cy.get(':nth-child(2) > .gb_V').click();
 });
 And('The URL of the page should be {string}', (expectedUrl) => {
     cy.url().should('eq', 'https://www.google.com/imghp?hl=en&ogbl');
